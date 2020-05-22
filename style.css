@@ -13,7 +13,6 @@ html {
 }
 
 body {
-    background-color: var(--sand-color);
     font-family: var(--primary-font);
 }
 
