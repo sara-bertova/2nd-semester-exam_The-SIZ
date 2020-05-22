@@ -37,7 +37,7 @@ body {
 
 /*MENU*/
 input {
-  display: none;
+    display: none;
 }
 
 .open {
@@ -50,6 +50,7 @@ input {
     position: relative;
     top: 8px;
 }
+
 .open:before {
     content: "";
     background-color: var(--dark-blue);
@@ -62,17 +63,18 @@ input {
     transform: rotate(0deg);
     transition: all 0.3s ease;
 }
+
 .open:after {
-  content: "";
-  background-color: var(--dark-blue);
-  width: 24px;
-  height: 4px;
-  display: block;
-  border-radius: 2px;
-  position: relative;
-  top: 4px;
-  transform: rotate(0deg);
-  transition: all 0.3s ease;
+    content: "";
+    background-color: var(--dark-blue);
+    width: 24px;
+    height: 4px;
+    display: block;
+    border-radius: 2px;
+    position: relative;
+    top: 4px;
+    transform: rotate(0deg);
+    transition: all 0.3s ease;
 }
 
 .menu_open {
@@ -84,35 +86,39 @@ input {
     margin-left: auto;
     margin-right: auto;
 }
-.menu_open:hover{
-  top: -9px;
-}
+
 .menu_open:hover {
-  top: 5px;
+    top: -9px;
+}
+
+.menu_open:hover {
+    top: 5px;
 }
 
 .menu {
-  position: fixed;
-  width: 100vw;
-  height: 100vh;
-  top: 0;
-  left: 0;
-  background-color: var(--transparent-blue);
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: var(--transparent-blue);
 }
+
 .menu .menu_content {
-  position: relative;
-  top: 50%;
-  font-size: 54px;
-  text-align: center;
-  padding-bottom: 20px;
-  margin-top: -170px;
+    position: relative;
+    top: 50%;
+    font-size: 54px;
+    text-align: center;
+    padding-bottom: 20px;
+    margin-top: -170px;
 }
 
 .menu ul {
-  list-style: none;
-  padding: 0;
-  margin: 0 auto;
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
 }
+
 .menu ul li a {
     display: block;
     color: var(--sand-color);
@@ -121,66 +127,76 @@ input {
     padding: 10px 0;
     font-weight: 500;
 }
-.menu_selected{
+
+.menu_selected {
     text-decoration: line-through;
     text-decoration-color: var(--red-color);
 }
-.menu_other{
+
+.menu_other {
     text-decoration: none;
 }
+
 .menu ul li a:hover {
-  color: var(--blue-color);
+    color: var(--blue-color);
 }
+
 .menu ul li:hover {
-  background: var(--sand-color);
+    background: var(--sand-color);
 }
 
 .menu_effects {
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.5s, visibility 0.5s;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s, visibility 0.5s;
 }
+
 .menu_effects ul {
-  transform: translateY(0%);
-  transition: all 0.5s;
+    transform: translateY(0%);
+    transition: all 0.5s;
 }
 
 #menu_toggle:checked ~ .menu_effects {
-  opacity: 1;
-  visibility: visible;
-  transition: opacity 0.5s;
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.5s;
 }
+
 #menu_toggle:checked ~ .menu_effects ul {
-  opacity: 1;
+    opacity: 1;
 }
+
 #menu_toggle:checked ~ .menu_open .open {
-  background-color: transparent;
+    background-color: transparent;
 }
+
 #menu_toggle:checked ~ .menu_open .open:before {
-  content: "";
-  background-color: var(--sand-color);
-  transform: rotate(45deg);
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: 1;
+    content: "";
+    background-color: var(--sand-color);
+    transform: rotate(45deg);
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
 }
+
 #menu_toggle:checked ~ .menu_open .open:after {
-  content: "";
-  background-color: var(--sand-color);
-  transform: rotate(-45deg);
-  position: relative;
-  top: 0;
-  right: 0;
-  z-index: 1;
+    content: "";
+    background-color: var(--sand-color);
+    transform: rotate(-45deg);
+    position: relative;
+    top: 0;
+    right: 0;
+    z-index: 1;
 }
+
 #menu_toggle:not(:checked) ~ .menu_effects ul {
-  transform: translateY(-30%);
+    transform: translateY(-30%);
 }
 
 
 /*HOMEPAGE*/
-.homepage_container{
+.homepage_container {
     display: flex;
     flex-direction: row;
     position: fixed;
@@ -189,75 +205,82 @@ input {
     z-index: -1;
 }
 
-.homepage_1column{
+.homepage_1column {
     display: flex;
     flex-direction: column;
     margin-top: -100px;
 }
-.homepage_1column > img{
+
+.homepage_1column > img {
     width: 300px;
     height: auto;
     margin-top: 50px;
 }
 
-.homepage_2column{
+.homepage_2column {
     display: flex;
     flex-direction: column;
     margin-left: 50px;
 }
-.homepage_2column > img{
+
+.homepage_2column > img {
     width: 250px;
     height: auto;
     margin-top: 50px;
 }
-.homepage_quote{
+
+.homepage_quote {
     text-align: center;
     width: 250px;
     font-size: 50px;
     margin-top: 50px;
 }
 
-.homepage_3column{
+.homepage_3column {
     display: flex;
     flex-direction: column;
     margin-top: -150px;
     margin-left: 50px;
 }
-.homepage_3column > img{
+
+.homepage_3column > img {
     width: 150px;
     height: auto;
     margin-top: 50px;
 }
 
-.homepage_4column{
+.homepage_4column {
     display: flex;
     flex-direction: column;
     margin-left: 50px;
 }
-.homepage_4column > img{
+
+.homepage_4column > img {
     width: 230px;
     height: auto;
     margin-top: 50px;
 }
 
-.homepage_5column{
+.homepage_5column {
     display: flex;
     flex-direction: column;
     margin-left: 50px;
     margin-top: -280px;
 }
-.homepage_5column > img{
+
+.homepage_5column > img {
     width: 200px;
     height: auto;
     margin-top: 50px;
 }
 
-.homepage_6column{
+.homepage_6column {
     display: flex;
     flex-direction: column;
     margin-top: -200px;
 }
-.homepage_6column > img{
+
+.homepage_6column > img {
     width: 400px;
     height: auto;
     margin-top: 50px;
@@ -265,7 +288,7 @@ input {
 
 
 /*LOADER*/
-#loader-wrapper{
+#loader-wrapper {
     width: 100%;
     height: 100%;
     background-color: var(--dark-blue);
@@ -278,8 +301,51 @@ input {
     align-items: center;
 }
 
-.loader{
+.loader {
     color: var(--sand-color);
     font-weight: 900;
     font-size: 50px;
+}
+
+/*SCROLL*/
+path.cls-3 {
+    animation: .75s alternate infinite bounce;
+}
+
+svg {
+    max-width: 7%;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(30px);
+    }
+
+    100% {
+        transform: translateY(-10px);
+    }
+}
+
+/*BTT BUTTON*/
+.topBtn {
+    background: url(icons/bttb-21.svg);
+    background-repeat: no-repeat;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    width: 110px;
+    height: 110px;
+    z-index: 99;
+    border: none;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+    margin: 30px 0px;
+    transition: .5s;
+
+}
+
+.topBtn:hover {
+    background: url("icons/bttb-hover-21.svg");
+    background-repeat: no-repeat;
 }
