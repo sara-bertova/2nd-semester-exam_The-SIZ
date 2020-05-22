@@ -28,7 +28,7 @@ body {
     content: "";
     height: 300%;
     left: -50%;
-    opacity: 0.7;
+    opacity: 0.6;
     position: fixed;
     top: -110%;
     width: 300%;
@@ -353,4 +353,60 @@ svg {
 /*CONTACT*/
 main.contact {
     text-align: center;
+}
+
+.fb,
+.in,
+.ig {
+    background: url("../icons/fb-11.svg");
+    background-repeat: no-repeat;
+    position: relative;
+    bottom: 25px;
+    width: 120px;
+    height: 120px;
+    border: none;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+    transition: .5s;
+    padding-left: 0;
+}
+
+.fb:hover {
+    background: url("../icons/fb-hover-11.svg");
+    background-repeat: no-repeat;
+}
+
+.in {
+    background: url("../icons/in-12.svg");
+    background-repeat: no-repeat;
+}
+
+.in:hover {
+    background: url("../icons/in-hover-12.svg");
+    background-repeat: no-repeat;
+}
+
+.ig {
+    background: url("../icons/ig-14.svg");
+    background-repeat: no-repeat;
+}
+
+.ig:hover {
+    background: url("../icons/ig-hover-14.svg");
+    background-repeat: no-repeat;
+}
+
+ul.con-icons {
+    display: flex;
+    justify-content: center;
+    z-index: -1;
+    padding-left: 0;
+}
+
+footer ul.fb,
+footer ul.in,
+footer ul.ig {
+    width: 100px;
+    height: 100px;
 }
