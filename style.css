@@ -32,24 +32,10 @@ body {
     position: fixed;
     top: -110%;
     width: 300%;
-    /*z-index: -5;*/
+    z-index: -5;
 }
 
 /*MENU*/
-nav {
-    position: relative;
-}
-.menu_btn{
-    z-index: 2;
-    text-align: center;
-    cursor: pointer;
-}
-.menu_btn > p{
-    letter-spacing: 3px;
-    font-weight: bold;
-    font-size: 18px;
-}
-
 input {
   display: none;
 }
