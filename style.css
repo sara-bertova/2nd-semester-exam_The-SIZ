@@ -36,20 +36,6 @@ body {
 }
 
 /*MENU*/
-nav {
-    position: relative;
-}
-.menu_btn{
-    z-index: 2;
-    text-align: center;
-    cursor: pointer;
-}
-.menu_btn > p{
-    letter-spacing: 3px;
-    font-weight: bold;
-    font-size: 18px;
-}
-
 input {
   display: none;
 }
