@@ -335,7 +335,7 @@ svg {
     right: 30px;
     width: 110px;
     height: 110px;
-    z-index: 99;
+    z-index: -1;
     border: none;
     border-radius: 50%;
     outline: none;
@@ -348,4 +348,9 @@ svg {
 .topBtn:hover {
     background: url("icons/bttb-hover-21.svg");
     background-repeat: no-repeat;
+}
+
+/*CONTACT*/
+main.contact {
+    text-align: center;
 }
