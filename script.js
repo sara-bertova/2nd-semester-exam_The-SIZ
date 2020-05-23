@@ -7,14 +7,14 @@ setTimeout(function(){
 
 
 //LOADER
-var overlay = document.getElementById("loader-wrapper");
+var overlay = document.getElementById("loader_wrapper");
 
 window.addEventListener("load", function(){
     overlay.style.display = "none";
 })
 
 
-//GO TO TOP BTN//
+//GO TO TOP BTN
 
 //enable/disable scroll button based on scroller position
 function scrollFunction() {
