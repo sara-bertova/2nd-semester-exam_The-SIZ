@@ -422,7 +422,7 @@ section a.menu_other:hover {
 }
 
 .gallery-container {
-    margin: 0 50px;
+    margin: 0 200px;
     column-count: 3;
     column-gap: 50px;
     padding-top: 50px;
