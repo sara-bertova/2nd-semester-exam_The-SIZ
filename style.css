@@ -459,6 +459,47 @@ p.gal-name {
     height: auto;
 }
 
+/*PHOTOSHOOT PAGE*/
+figure img {
+    cursor: pointer;
+}
+
+figure img:hover {
+    opacity: 50%;
+}
+
+.modal-background {
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    cursor: pointer;
+    overflow: auto;
+}
+
+.modal-content {
+    background-color: transparent;
+    padding: 0;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.modal-image {
+    max-width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+}
+
+.hide {
+    display: none;
+}
+
 /*ABOUT*/
 .about_main {
     margin: 0 50px;
