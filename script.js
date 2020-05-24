@@ -9,16 +9,15 @@ setTimeout(function(){
 //LOADER
 var overlay = document.getElementById("loader_wrapper");
 
-window.addEventListener("load", function(){
+window.addEventListener("load", function () {
     overlay.style.display = "none";
 })
 
 
 //GO TO TOP BTN
-
+var topBtn = document.getElementById("topBtn");
 //enable/disable scroll button based on scroller position
 function scrollFunction() {
-    var topBtn = document.getElementById("topBtn");
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
         topBtn.style.display = "block";
     } else {
@@ -29,6 +28,8 @@ function scrollFunction() {
 window.onscroll = function () {
     scrollFunction()
 };
+
+topBtn.addEventListener("click", topFunction);
 
 // When the user clicks on the button, scroll to the top of the document
 function topFunction() { // eslint-disable-line no-unused-vars
