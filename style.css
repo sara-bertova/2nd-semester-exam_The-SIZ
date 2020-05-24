@@ -416,20 +416,21 @@ section a.menu_other:hover {
 /*WORK - GALLERY*/
 .gallery {
     position: relative;
+    cursor: pointer;
     /*z-index: -1;*/
 
 }
 
 .gallery-container {
     margin: 0 50px;
-    column-count: 4;
-    column-gap: 15px;
-    padding-top: 5vmin;
-    padding-bottom: 5vmin;
+    column-count: 3;
+    column-gap: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .pic-gallery {
-    margin-bottom: 15px;
+    margin-bottom: 50px;
     transition: .2s;
 }
 
@@ -443,7 +444,7 @@ section a.menu_other:hover {
     right: 0;
     background: rgba(255, 255, 255, 0.5);
     width: 35px;
-    height: 99%;
+    height: 100%;
     color: var(--dark-blue);
 }
 
@@ -612,6 +613,7 @@ footer ul.ig {
     height: 100px;
 }
 
+/*RESPONSIVE*/
 @media only screen and (max-width: 1350px) {
     .about_main {
         grid-template-columns: 1fr 1fr;
@@ -643,12 +645,6 @@ footer ul.ig {
         grid-row: 2 / 4;
     }
 
-}
-
-@media only screen and (max-width: 1000px) {
-    .gallery-container {
-        column-count: 3;
-    }
 }
 
 @media only screen and (max-width: 800px) {
