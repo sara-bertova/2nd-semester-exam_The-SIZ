@@ -444,14 +444,13 @@ section a.menu_other:hover {
     right: 0;
     background: rgba(255, 255, 255, 0.5);
     width: 35px;
-    height: 100%;
+    height: 99.25%;
     color: var(--dark-blue);
 }
 
 p.gal-name {
     margin: 0;
     writing-mode: vertical-rl;
-    text-align: center;
     font-size: 30px;
 }
 
@@ -577,40 +576,40 @@ ul.con-icons {
 }
 
 .fb {
-    background: url("../icons/fb-11.svg");
+    background: url("icons/fb-11.svg");
     background-repeat: no-repeat;
 }
 
 .fb:hover {
-    background: url("../icons/fb-hover-11.svg");
+    background: url("icons/fb-hover-11.svg");
     background-repeat: no-repeat;
 }
 
 .in {
-    background: url("../icons/in-12.svg");
+    background: url("icons/in-12.svg");
     background-repeat: no-repeat;
 }
 
 .in:hover {
-    background: url("../icons/in-hover-12.svg");
+    background: url("icons/in-hover-12.svg");
     background-repeat: no-repeat;
 }
 
 .ig {
-    background: url("../icons/ig-14.svg");
+    background: url("icons/ig-14.svg");
     background-repeat: no-repeat;
 }
 
 .ig:hover {
-    background: url("../icons/ig-hover-14.svg");
+    background: url("icons/ig-hover-14.svg");
     background-repeat: no-repeat;
 }
 
 footer ul.fb,
 footer ul.in,
 footer ul.ig {
-    width: 100px;
-    height: 100px;
+    width: 70px;
+    height: 70px;
 }
 
 /*RESPONSIVE*/
