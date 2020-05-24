@@ -22,7 +22,7 @@ body {
 
 /*TEXTURE*/
 .page_header:after {
-    background-image: url(../paper-pattern.png);
+    background-image: url(paper-pattern.png);
     content: "";
     height: 300%;
     left: -50%;
@@ -306,9 +306,11 @@ svg {
     0% {
         opacity: 1;
     }
+
     50% {
         opacity: 0;
     }
+
     100% {
         opacity: 1;
     }
@@ -366,9 +368,11 @@ svg {
     0% {
         opacity: 1;
     }
+
     50% {
         opacity: 0;
     }
+
     100% {
         opacity: 1;
     }
@@ -387,7 +391,25 @@ svg {
     margin-top: 50px;
 }
 
+/*WORK*/
+section ul {
+    display: flex;
+    justify-content: center;
+}
 
+section li {
+    list-style: none;
+    padding-right: 50px;
+}
+
+section a.menu_other {
+    color: var(--dark-blue);
+}
+
+section a.menu_other:hover {
+    text-decoration: line-through;
+    text-decoration-color: var(--blue-color);
+}
 
 /*ABOUT*/
 .about_main {
