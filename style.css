@@ -20,6 +20,7 @@ body {
     color: var(--dark-blue);
 }
 
+
 /*TEXTURE*/
 .page_header:after {
     background-image: url(paper-pattern.png);
@@ -32,6 +33,7 @@ body {
     width: 300%;
     z-index: -5;
 }
+
 
 /*MENU*/
 nav {
@@ -196,6 +198,7 @@ input {
     transform: translateY(-30%);
 }
 
+
 /*LOADER*/
 #loader_wrapper {
     width: 100%;
@@ -216,7 +219,8 @@ input {
     font-size: 50px;
 }
 
-/*SCROLL*/
+
+/*SCROLL ICON*/
 path.cls-3 {
     animation: .75s alternate infinite bounce;
 }
@@ -234,6 +238,7 @@ svg {
         transform: translateY(-10px);
     }
 }
+
 
 /*BTT BUTTON*/
 #topBtn {
@@ -258,6 +263,7 @@ svg {
 #topBtn:hover {
     background: url("icons/bttb-hover-21.svg") no-repeat;
 }
+
 
 /*HOMEPAGE*/
 .homepage_container {
@@ -392,6 +398,7 @@ svg {
     margin-top: 50px;
 }
 
+
 /*WORK*/
 section ul {
     display: flex;
@@ -413,12 +420,12 @@ section a.menu_other:hover {
     text-decoration-color: var(--blue-color);
 }
 
+
 /*WORK - GALLERY*/
 .gallery {
     position: relative;
     cursor: pointer;
     /*z-index: -1;*/
-
 }
 
 .gallery-container {
@@ -458,6 +465,7 @@ p.gal-name {
     width: 100%;
     height: auto;
 }
+
 
 /*PHOTOSHOOT PAGE*/
 figure img {
@@ -499,6 +507,7 @@ figure img:hover {
 .hide {
     display: none;
 }
+
 
 /*ABOUT*/
 .about_main {
@@ -571,6 +580,7 @@ video {
     margin-top: 100px;
 }
 
+
 /*CONTACT*/
 .contact_main {
     display: grid;
@@ -598,6 +608,7 @@ ul.con-icons {
     grid-row: 1 / 5;
     opacity: .5;
 }
+
 
 /*SOME ICONS*/
 .fb,
@@ -653,6 +664,7 @@ footer ul.ig {
     height: 70px;
 }
 
+
 /*RESPONSIVE*/
 @media only screen and (max-width: 1350px) {
     .about_main {
@@ -684,7 +696,6 @@ footer ul.ig {
         grid-column: 2;
         grid-row: 2 / 4;
     }
-
 }
 
 @media only screen and (max-width: 800px) {

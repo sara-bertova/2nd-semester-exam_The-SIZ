@@ -5,12 +5,14 @@ setTimeout(function(){
          }, 2000);
 */
 
+
 //LOADER
 var overlay = document.getElementById("loader_wrapper");
 
 window.addEventListener("load", function () {
     overlay.style.display = "none";
 })
+
 
 //GO TO TOP BTN
 var topBtn = document.getElementById("topBtn");
@@ -34,6 +36,7 @@ function topFunction() { // eslint-disable-line no-unused-vars
     document.body.scrollTop = 0; // For Safari
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
+
 
 //MODAL
 const modal = document.querySelector(".modal-background");
