@@ -161,6 +161,11 @@ input {
     transition: all 0.5s;
 }
 
+.artist_name{
+    color: #90B2C4;
+    font-weight: bold;
+}
+
 #menu_toggle:checked ~ .menu_effects {
     opacity: 1;
     visibility: visible;
@@ -523,6 +528,7 @@ figure img:hover {
 .about_intro {
     font-size: 18px;
     font-weight: 600;
+    line-height: 25px;
 }
 
 .about_heading {
@@ -536,7 +542,7 @@ figure img:hover {
 
 .about_intro {
     padding: 0;
-    margin: 0;
+    margin-top: 10px;
     grid-column: 1;
     grid-row: 2;
 }
@@ -552,7 +558,6 @@ video {
     grid-row: 3;
     background-color: var(--blue-color);
     padding-left: 30px;
-    margin-left: 100px;
     margin-top: 70px;
     z-index: -1;
 }
@@ -671,6 +676,7 @@ footer ul.ig {
     .about_main {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto;
+        column-gap: 50px;
     }
 
     video {
@@ -706,7 +712,7 @@ footer ul.ig {
     }
 
     .about_main {
-        margin: 0;
+        margin: 10px;
         grid-template-columns: 1fr;
         grid-template-rows: auto;
     }
