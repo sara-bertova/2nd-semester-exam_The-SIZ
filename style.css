@@ -301,7 +301,7 @@ svg {
     margin-top: 50px;
 }
 
-.homepage_2column > .homepage_quote {
+.homepage_quote1 {
     text-align: center;
     width: 250px;
     font-size: 50px;
@@ -363,7 +363,7 @@ svg {
     margin-top: 50px;
 }
 
-.homepage_5column > .homepage_quote {
+.homepage_quote2 {
     text-align: center;
     width: 200px;
     font-size: 30px;
