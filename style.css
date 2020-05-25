@@ -6,7 +6,6 @@
     --blue-color: #7FA2B3;
     --transparent-blue: rgba(127, 162, 179, 0.9);
     --red-color: #EC5502;
-    /*--cream-color: #FFF5E8;*/
     --dark-blue: #00334A;
     --primary-font: 'Source Code Pro', monospace;
 }
@@ -701,6 +700,11 @@ footer ul.ig {
 }
 
 @media only screen and (max-width: 800px) {
+
+    .homepage_quote1, .homepage_quote2{
+        display: none;
+    }
+
     .about_main {
         margin: 0;
         grid-template-columns: 1fr;
@@ -739,6 +743,11 @@ footer ul.ig {
 }
 
 @media only screen and (max-width: 600px) {
+
+    .artist_name{
+        font-size: 40px;
+    }
+
     .gallery-container {
         column-count: 1;
     }
