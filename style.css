@@ -696,7 +696,7 @@ figure img:hover {
 .about_text,
 .about_intro {
     font-size: 18px;
-    font-weight: 600;
+    /*font-weight: 600;*/
     line-height: 25px;
 }
 
