@@ -28,9 +28,10 @@ function showSubmenu(oneCategory) {
 //WORK-GALLERY
 const urlParams = new URLSearchParams(window.location.search);
 const the_photoshoot_id = urlParams.get("photoshoot_id");
+console.log(the_photoshoot_id)
 
 if (the_photoshoot_id) {
-    fetch("http://rasbery.eu/kph/wp-json/wp/v2/photoshoot/" + the_photoshoot_id + "?_embed")
+    fetch("http://www.rasbery.eu/2nd-semester-exam/wp-json/wp/v2/photoshoot/" + the_photoshoot_id + "?_embed")
         .then(function (response) {
             return response.json()
         })
