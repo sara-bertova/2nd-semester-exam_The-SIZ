@@ -213,16 +213,42 @@ input {
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 1000;
+    z-index: 1;
     display: flex;
     justify-content: center;
     align-items: center;
+    opacity: 1;
+    animation: removeLoader 1s ease-out 4s;
 }
 
 .loader {
     color: var(--sand-color);
     font-weight: 900;
     font-size: 50px;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    opacity: 0;
+    animation: fadeInLoader 2s,
+        fadeOutLoader 2s ease-in 2s;
+}
+
+@keyframes fadeOutLoader{
+    from{
+        opacity: 1;
+        z-index: 1;
+    }
+    to{
+        opacity: 0;
+    }
+}
+
+@keyframes fadeInLoader{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
 }
 
 

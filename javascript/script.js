@@ -1,18 +1,9 @@
-//ALTERNATIVE LOADER
-/*
-setTimeout(function(){
-            window.location.href = 'home.html';
-         }, 2000);
-*/
-
-
-//LOADER
+/*//LOADER
 var overlay = document.getElementById("loader_wrapper");
 
 window.addEventListener("load", function () {
     overlay.style.display = "none";
-})
-
+})*/
 
 //GO TO TOP BTN
 var topBtn = document.getElementById("topBtn");
