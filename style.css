@@ -544,6 +544,11 @@ p.gal-name {
 
 
 /*PHOTOSHOOT PAGE*/
+.back_btn{
+    margin-left: 200px;
+    margin-top: 50px;
+}
+
 h1 {
     writing-mode: vertical-rl;
 }
@@ -870,6 +875,10 @@ footer ul.ig {
 
     p.gal-name {
         font-size: 3vmin;
+    }
+
+    .back_btn{
+        margin-left: 20px;
     }
 }
 
