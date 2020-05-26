@@ -544,6 +544,10 @@ p.gal-name {
 
 
 /*PHOTOSHOOT PAGE*/
+h1 {
+    writing-mode: vertical-rl;
+}
+
 .sub-pic-gallery {
     column-count: 2;
     column-gap: 0px;

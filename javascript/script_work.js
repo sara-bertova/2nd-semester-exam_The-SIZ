@@ -7,10 +7,12 @@ fetch("http://www.rasbery.eu/2nd-semester-exam/wp-json/wp/v2/categories?parent=5
         handleSubmenuData(data)
     })
 
+
 function handleSubmenuData(jsonData) {
     jsonData.reverse();
     jsonData.forEach(showSubmenu);
 }
+
 
 function showSubmenu(oneCategory) {
     const ul = document.querySelector("#submenu")
@@ -28,7 +30,6 @@ function showSubmenu(oneCategory) {
 //WORK-GALLERY
 const urlParams = new URLSearchParams(window.location.search);
 const the_photoshoot_id = urlParams.get("photoshoot_id");
-console.log(the_photoshoot_id)
 
 if (the_photoshoot_id) {
     fetch("http://www.rasbery.eu/2nd-semester-exam/wp-json/wp/v2/photoshoot/" + the_photoshoot_id + "?_embed")
@@ -50,18 +51,12 @@ if (the_photoshoot_id) {
     }
 }
 
-/*fetch("http://www.rasbery.eu/2nd-semester-exam/wp-json/wp/v2/photoshoot?per_page=12")
-    .then(function (response) {
-        return response.json()
-    })
-    .then(function (data) {
-        handleGalleryData(data)
-    })*/
 
 function handleGalleryData(jsonData) {
     jsonData.reverse();
     jsonData.forEach(showGallery);
 }
+
 
 function showGallery(oneShoot) {
     const template = document.querySelector("#galleryTempl").content;
@@ -94,18 +89,18 @@ function showSinglePhotoshoot(photoshoot) {
         }
 
         document.querySelector(".singlePhotoshoot").appendChild(copy);
+
+        //MODAL --> not finished
+        const modal = document.querySelector(".modal-background");
+        if (modal) {
+            modal.addEventListener("click", () => {
+                modal.classList.add("hide");
+            });
+
+            const modalImg = document.querySelector(".modalImg")
+            modalImg.addEventListener("click", () => {
+                modal.classList.remove("hide");
+            });
+        }
     }
-}
-
-//MODAL
-const modal = document.querySelector(".modal-background");
-if (modal) {
-    modal.addEventListener("click", () => {
-        modal.classList.add("hide");
-    });
-
-    const modalImg = document.querySelector(".modalImg")
-    modalImg.addEventListener("click", () => {
-        modal.classList.remove("hide");
-    });
 }
