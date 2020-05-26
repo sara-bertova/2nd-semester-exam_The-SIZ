@@ -67,6 +67,11 @@ function showGallery(oneShoot) {
     const template = document.querySelector("#galleryTempl").content;
     const clone = template.cloneNode(true);
 
+    const gallery_link = clone.querySelector(".gallery-link");
+    if (gallery_link) {
+        gallery_link.href += oneShoot.id;
+    }
+
     clone.querySelector(".gal-image").src = oneShoot.cover_image.guid;
     clone.querySelector(".gal-name").innerHTML = oneShoot.title.rendered;
 
@@ -80,14 +85,14 @@ function showSinglePhotoshoot(photoshoot) {
         const sub_gallery_template = document.querySelector("#sub-gallery-template").content;
         const copy = sub_gallery_template.cloneNode(true);
 
-        for (i = 0; i < photoshoot.images.length; i++) {
+        /*for (i = 0; i < photoshoot.images.length; i++) {*/
             const shoot_img = document.createElement("img");
-            shoot_img.src = photoshoot.photoshoot_images[i].guid;
+            shoot_img.src = photoshoot.cover_image.guid;
             shoot_img.classList.add("modalImg");
-            copy.querySelector(".sub-pic-gallery").append(shoot_img);
-        }
+            /*copy.querySelector(".sub-pic-gallery").append(shoot_img);
+        }*/
 
-        document.querySelector(".singlePhotoshoot").appendChild(copy);
+        document.querySelector(".singlePhotoshoot").appendChild(shoot_img);
     }
 }
 
