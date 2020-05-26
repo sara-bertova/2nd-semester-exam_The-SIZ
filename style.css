@@ -431,22 +431,24 @@ svg {
 
 
 /*WORK*/
-section ul {
+
+ul#submenu {
     display: flex;
     justify-content: center;
+    background-color: var(--blue-color);
 }
 
-section li {
+ul#submenu li {
     list-style: none;
     padding-right: 50px;
 }
 
-section a.menu_other,
-section a.menu_selected {
+ul#submenu a.menu_other,
+ul#submenu a.menu_selected {
     color: var(--dark-blue);
 }
 
-section a.menu_other:hover {
+ul#submenu a.menu_other:hover {
     text-decoration: line-through;
     text-decoration-color: var(--blue-color);
 }
