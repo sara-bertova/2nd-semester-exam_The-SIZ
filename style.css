@@ -458,25 +458,6 @@ ul#submenu a.menu_other:hover {
 
 
 /*WORK - GALLERY*/
-.work_submenu{
-    margin-top: 20px;
-    background-color: var(--blue-color);
-    padding: 5px 0;
-    letter-spacing: 3px;
-}
-.submenu_other, .submenu_selected{
-    font-size: 25px;
-    font-weight: 600;
-    color: white;
-}
-.submenu_other{
-    text-decoration: none;
-}
-.submenu_selected, .submenu_other:hover{
-    text-decoration: line-through;
-    text-decoration-color: var(--red-color);
-}
-
 .gallery {
     position: relative;
     cursor: pointer;
