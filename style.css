@@ -594,6 +594,7 @@ ul#submenu a.menu_other:hover {
 p.gal-name {
     margin: 0;
     writing-mode: vertical-rl;
+    font-size: 30px;
 }
 
 .gallery img {
