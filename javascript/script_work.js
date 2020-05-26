@@ -17,7 +17,7 @@ function showSubmenu(oneCategory) {
     const li = document.createElement("li");
     const a = document.createElement("a");
     a.textContent = oneCategory.name;
-    a.classList.add("menu_other");
+    a.classList.add("submenu_other");
     li.appendChild(a);
     ul.appendChild(li);
 }
