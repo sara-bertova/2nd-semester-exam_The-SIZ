@@ -227,8 +227,8 @@ input {
     text-transform: uppercase;
     letter-spacing: 10px;
     opacity: 0;
-    animation: fadeInLoader 2s,
-        fadeOutLoader 2s ease-in 2s;
+    animation: fadeInLoader 1s,
+        fadeOutLoader 1s ease-in 1s;
 }
 
 @keyframes fadeOutLoader{
