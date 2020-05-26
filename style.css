@@ -497,7 +497,7 @@ ul#submenu a.menu_other:hover {
 }
 
 .gallery-container {
-    margin: 0 200px;
+    margin: 0 20vmin;
     column-count: 3;
     column-gap: 50px;
     padding-top: 50px;
@@ -509,8 +509,15 @@ ul#submenu a.menu_other:hover {
     transition: .2s;
 }
 
-.pic-gallery:hover {
-    opacity: 0.5;
+.pic-gallery:hover .gallery-text {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.5);
+    width: 100%;
+    height: 99.25%;
+    color: var(--dark-blue);
+    transition: .5s;
 }
 
 .gallery-text {
@@ -518,7 +525,7 @@ ul#submenu a.menu_other:hover {
     top: 0;
     right: 0;
     background: rgba(255, 255, 255, 0.5);
-    width: 35px;
+    width: 30%;
     height: 99.25%;
     color: var(--dark-blue);
 }
@@ -526,7 +533,6 @@ ul#submenu a.menu_other:hover {
 p.gal-name {
     margin: 0;
     writing-mode: vertical-rl;
-    font-size: 30px;
 }
 
 .gallery img {
@@ -765,6 +771,9 @@ footer ul.ig {
         grid-column: 2;
         grid-row: 2 / 4;
     }
+    p.gal-name {
+    font-size: 3vmin;
+}
 }
 
 @media only screen and (max-width: 800px) {
@@ -821,6 +830,9 @@ footer ul.ig {
     .gallery-container {
         column-count: 2;
     }
+    p.gal-name {
+    font-size: 3vmin;
+}
 }
 
 @media only screen and (max-width: 600px) {
@@ -832,4 +844,7 @@ footer ul.ig {
     .gallery-container {
         column-count: 1;
     }
+    p.gal-name {
+    font-size: 6vmin;
+}
 }
