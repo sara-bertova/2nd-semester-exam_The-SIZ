@@ -1,3 +1,9 @@
+/*//LOADER
+setTimeout(function () {
+    document.getElementById("loader_wrapper").style.display = "none";
+}, 2000);*/
+
+
 //SUBMENU
 fetch("http://www.rasbery.eu/2nd-semester-exam/wp-json/wp/v2/categories?parent=5")
     .then(function (response) {

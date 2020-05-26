@@ -1,3 +1,11 @@
+/*
+//LOADER
+setTimeout(function(){
+            document.getElementById("loader_wrapper") .style.display = "none";
+         }, 2000);
+*/
+
+
 const urlParams = new URLSearchParams(window.location.search);
 const the_photoshoot_id = urlParams.get("photoshoot_id");
 
