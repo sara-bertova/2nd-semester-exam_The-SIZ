@@ -1,6 +1,6 @@
 setTimeout(function(){
             document.getElementById("loader_wrapper") .style.display = "none";
-         }, 4000);
+         }, 2300);
 
 
 fetch("http://www.rasbery.eu/2nd-semester-exam/wp-json/wp/v2/homepage_photo?per_page=19")
