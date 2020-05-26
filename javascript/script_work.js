@@ -17,6 +17,7 @@ function showSubmenu(oneCategory) {
     const li = document.createElement("li");
     const a = document.createElement("a");
     a.textContent = oneCategory.name;
+
     a.href = oneCategory.slug; //it won't be like this!
     a.classList.add("menu_other");
     li.appendChild(a);
