@@ -218,7 +218,6 @@ input {
     justify-content: center;
     align-items: center;
     opacity: 1;
-    animation: removeLoader 1s ease-out 4s;
 }
 
 .loader {
@@ -732,6 +731,17 @@ footer ul.ig {
 }
 
 @media only screen and (max-width: 800px) {
+
+    #loader_wrapper{
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .loader{
+        font-size: 40px;
+
+    }
 
     .homepage_quote1, .homepage_quote2{
         display: none;
