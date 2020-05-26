@@ -16,7 +16,21 @@ function showSinglePhotoshoot(photoshoot) {
         const subGalleryTemplate = document.querySelector("#sub-gallery-template").content;
         const copy = subGalleryTemplate.cloneNode(true);
 
+        const modalTemplate = document.querySelector("#modalTempl").content;
+        const clone = modalTemplate.cloneNode(true);
+
         copy.querySelector("h1").innerHTML = photoshoot.title.rendered;
+
+        for (i = 0; i < photoshoot.full_size_images.length; i++) {
+            const modalImg = document.createElement("img");
+            modalImg.classList.add("modal-image");
+            modalImg.src = photoshoot.full_size_images[i].guid;
+
+            clone.querySelector(".modal-content").append(modalImg);
+        }
+
+        document.querySelector(".singlePic").append(clone);
+
         for (i = 0; i < photoshoot.photoshoot_images.length; i++) {
             const shootImg = document.createElement("img");
             shootImg.src = photoshoot.photoshoot_images[i].guid;
