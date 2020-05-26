@@ -161,7 +161,7 @@ input {
     transition: all 0.5s;
 }
 
-.artist_name{
+.artist_name {
     color: #90B2C4;
     font-weight: bold;
 }
@@ -231,21 +231,23 @@ input {
         fadeOutLoader 1s ease-in 1s;
 }
 
-@keyframes fadeOutLoader{
-    from{
+@keyframes fadeOutLoader {
+    from {
         opacity: 1;
         z-index: 1;
     }
-    to{
+
+    to {
         opacity: 0;
     }
 }
 
-@keyframes fadeInLoader{
-    from{
+@keyframes fadeInLoader {
+    from {
         opacity: 0;
     }
-    to{
+
+    to {
         opacity: 1;
     }
 }
@@ -431,26 +433,27 @@ svg {
 
 
 /*WORK*/
-
 ul#submenu {
     display: flex;
     justify-content: center;
-    background-color: var(--blue-color);
+    background-color: var(--transparent-blue);
+    margin-top: 50px;
 }
 
 ul#submenu li {
     list-style: none;
-    padding-right: 50px;
+    padding: 15px 70px 15px 0;
 }
 
 ul#submenu a.menu_other,
 ul#submenu a.menu_selected {
-    color: var(--dark-blue);
+    color: white;
+    font-weight: 500;
 }
 
 ul#submenu a.menu_other:hover {
     text-decoration: line-through;
-    text-decoration-color: var(--blue-color);
+    text-decoration-color: var(--dark-blue);
 }
 
 
@@ -734,18 +737,20 @@ footer ul.ig {
 
 @media only screen and (max-width: 800px) {
 
-    #loader_wrapper{
+    #loader_wrapper {
         text-align: center;
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
     }
-    .loader{
+
+    .loader {
         font-size: 40px;
 
     }
 
-    .homepage_quote1, .homepage_quote2{
+    .homepage_quote1,
+    .homepage_quote2 {
         display: none;
     }
 
@@ -788,7 +793,7 @@ footer ul.ig {
 
 @media only screen and (max-width: 600px) {
 
-    .artist_name{
+    .artist_name {
         font-size: 40px;
     }
 
