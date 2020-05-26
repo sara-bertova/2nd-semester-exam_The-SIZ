@@ -258,8 +258,20 @@ path.cls-3 {
     animation: .75s alternate infinite bounce;
 }
 
-svg {
-    max-width: 7%;
+.scroll-down {
+    position: absolute;
+    left: 4%;
+    margin-left: -20px;
+    width: 100px;
+    height: 100px;
+    bottom: 35px;
+    padding-left: 7px;
+    cursor: pointer;
+    z-index: 2;
+    color: #c7c4b8;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 @keyframes bounce {
@@ -458,21 +470,26 @@ ul#submenu a.menu_other:hover {
 
 
 /*WORK - GALLERY*/
-.work_submenu{
+.work_submenu {
     margin-top: 20px;
     background-color: var(--blue-color);
     padding: 5px 0;
     letter-spacing: 3px;
 }
-.submenu_other, .submenu_selected{
+
+.submenu_other,
+.submenu_selected {
     font-size: 25px;
     font-weight: 600;
     color: white;
 }
-.submenu_other{
+
+.submenu_other {
     text-decoration: none;
 }
-.submenu_selected, .submenu_other:hover{
+
+.submenu_selected,
+.submenu_other:hover {
     text-decoration: line-through;
     text-decoration-color: var(--red-color);
 }
