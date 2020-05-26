@@ -13,29 +13,27 @@ if (the_photoshoot_id) {
 
 function showSinglePhotoshoot(photoshoot) {
     if (document.querySelector("#sub-gallery-template")) {
-        const sub_gallery_template = document.querySelector("#sub-gallery-template").content;
-        const copy = sub_gallery_template.cloneNode(true);
+        const subGalleryTemplate = document.querySelector("#sub-gallery-template").content;
+        const copy = subGalleryTemplate.cloneNode(true);
 
         copy.querySelector("h1").innerHTML = photoshoot.title.rendered;
         for (i = 0; i < photoshoot.photoshoot_images.length; i++) {
-            const shoot_img = document.createElement("img");
-            shoot_img.src = photoshoot.photoshoot_images[i].guid;
-            shoot_img.classList.add("modalImg");
-            copy.querySelector(".sub-pic-gallery").append(shoot_img);
+            const shootImg = document.createElement("img");
+            shootImg.src = photoshoot.photoshoot_images[i].guid;
+            shootImg.addEventListener("click", () => {
+                modal.classList.remove("hide");
+            });
+
+            copy.querySelector(".sub-pic-gallery").append(shootImg);
         }
 
         document.querySelector(".singlePhotoshoot").appendChild(copy);
 
-        //MODAL --> not finished
+        //MODAL
         const modal = document.querySelector(".modal-background");
         if (modal) {
             modal.addEventListener("click", () => {
                 modal.classList.add("hide");
-            });
-
-            const modalImg = document.querySelector(".modalImg")
-            modalImg.addEventListener("click", () => {
-                modal.classList.remove("hide");
             });
         }
     }
