@@ -25,6 +25,32 @@ function showSubmenu(oneCategory) {
 }
 
 
+//WORK-GALLERY
+fetch("http://www.rasbery.eu/2nd-semester-exam/wp-json/wp/v2/photoshoot?per_page=12")
+    .then(function (response) {
+        return response.json()
+    })
+    .then(function (data) {
+        handleGalleryData(data)
+    })
+
+function handleGalleryData(jsonData) {
+    jsonData.reverse();
+    jsonData.forEach(showGallery);
+}
+
+function showGallery(oneShoot) {
+    const template = document.querySelector("#galleryTempl").content;
+    const clone = template.cloneNode(true);
+
+    clone.querySelector(".gal-image").src = oneShoot.cover_image.guid;
+    clone.querySelector(".gal-name").textContent = oneShoot.title.rendered;
+
+    document.querySelector(".gallery-container").appendChild(clone);
+
+}
+
+
 //MODAL
 const modal = document.querySelector(".modal-background");
 if (modal) {
