@@ -260,17 +260,13 @@ path.cls-3 {
 
 .scroll-down {
     position: absolute;
-    left: 4%;
+    left: 5%;
     margin-left: -20px;
     width: 100px;
     height: 100px;
     bottom: 35px;
-    padding-left: 7px;
-    cursor: pointer;
+    /*padding-left: 7px;*/
     z-index: 2;
-    color: #c7c4b8;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
 
