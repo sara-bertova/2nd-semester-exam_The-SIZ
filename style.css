@@ -29,11 +29,70 @@ body {
     opacity: 0.6;
     position: fixed;
     top: -110%;
+
     width: 300%;
     z-index: -5;
 }
 
+/*SHAPES*/
+.shape1{
+    background-image: url(shapes/shape-1.png);
+    height:100%;
+    width: 100%;
+    position:absolute;
+    top: 30%;
+    left: 10%;
+    background-repeat: no-repeat;
+}
+.shape2{
+    background-image: url(shapes/shape-2.png);
+    height:100%;
+    width: 100%;
+    position:absolute;
+    top: 60%;
+    left: 50%;
+    background-repeat: no-repeat;
+}
+.shape3{
+    background-image: url(shapes/shape-3.png);
+    height:100%;
+    width: 100%;
+    position:absolute;
+    top: 100%;
+    left: 5%;
+    background-repeat: no-repeat;
+}
+.shape4{
+    background-image: url(shapes/shape-4.png);
+    height:100%;
+    width: 100%;
+    position:absolute;
+    top: 150%;
+    left: 25%;
+    background-repeat: no-repeat;
 
+}
+.shape5{
+    background-image: url(shapes/shape-1.png);
+    height:100%;
+    width: 100%;
+    position:absolute;
+    top: 110%;
+   right: 45%;
+    background-repeat: no-repeat;
+    transform: rotate(180deg)
+
+}
+.shape6{
+    background-image: url(shapes/shape-2.png);
+    height:100%;
+    width: 100%;
+    position:absolute;
+    top: 250%;
+    left: 35%;
+    background-repeat: no-repeat;
+
+}
 /*MENU*/
 nav {
     z-index: 100;
