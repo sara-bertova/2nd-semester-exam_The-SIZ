@@ -44,7 +44,7 @@ function showGallery(oneShoot) {
     const clone = template.cloneNode(true);
 
     clone.querySelector(".gal-image").src = oneShoot.cover_image.guid;
-    clone.querySelector(".gal-name").textContent = oneShoot.title.rendered;
+    clone.querySelector(".gal-name").innerHTML = oneShoot.title.rendered;
 
     document.querySelector(".gallery-container").appendChild(clone);
 

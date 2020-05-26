@@ -450,7 +450,7 @@ ul#submenu {
 
 ul#submenu li {
     list-style: none;
-    padding: 15px 70px 15px 0;
+    padding: 15px 35px 15px 35px;
 }
 
 ul#submenu a.menu_other,
