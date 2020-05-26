@@ -544,13 +544,43 @@ p.gal-name {
 
 
 /*PHOTOSHOOT PAGE*/
-figure img {
+.sub-pic-gallery {
+    column-count: 2;
+    column-gap: 0px;
+    line-height: 0;
+    margin: 0 50px;
+}
+
+.sub-pic-gallery img {
+    padding-bottom: 50px;
+}
+
+sub-pic-gallery img {
+    position: relative;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+.sub-gallery img {
+    width: 50%;
+    height: auto;
+    cursor: pointer;
+}
+
+.sub-gallery img:hover {
+    opacity: 50%;
+}
+
+/*figure img {
     cursor: pointer;
 }
 
 figure img:hover {
     opacity: 50%;
-}
+}*/
 
 .modal-background {
     position: fixed;
@@ -773,9 +803,10 @@ footer ul.ig {
         grid-column: 2;
         grid-row: 2 / 4;
     }
+
     p.gal-name {
-    font-size: 3vmin;
-}
+        font-size: 3vmin;
+    }
 }
 
 @media only screen and (max-width: 800px) {
@@ -832,9 +863,10 @@ footer ul.ig {
     .gallery-container {
         column-count: 2;
     }
+
     p.gal-name {
-    font-size: 3vmin;
-}
+        font-size: 3vmin;
+    }
 }
 
 @media only screen and (max-width: 600px) {
@@ -846,7 +878,8 @@ footer ul.ig {
     .gallery-container {
         column-count: 1;
     }
+
     p.gal-name {
-    font-size: 6vmin;
-}
+        font-size: 6vmin;
+    }
 }

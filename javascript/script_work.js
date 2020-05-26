@@ -85,14 +85,15 @@ function showSinglePhotoshoot(photoshoot) {
         const sub_gallery_template = document.querySelector("#sub-gallery-template").content;
         const copy = sub_gallery_template.cloneNode(true);
 
-        /*for (i = 0; i < photoshoot.images.length; i++) {*/
+        copy.querySelector("h1").innerHTML = photoshoot.title.rendered;
+        for (i = 0; i < photoshoot.photoshoot_images.length; i++) {
             const shoot_img = document.createElement("img");
-            shoot_img.src = photoshoot.cover_image.guid;
+            shoot_img.src = photoshoot.photoshoot_images[i].guid;
             shoot_img.classList.add("modalImg");
-            /*copy.querySelector(".sub-pic-gallery").append(shoot_img);
-        }*/
+            copy.querySelector(".sub-pic-gallery").append(shoot_img);
+        }
 
-        document.querySelector(".singlePhotoshoot").appendChild(shoot_img);
+        document.querySelector(".singlePhotoshoot").appendChild(copy);
     }
 }
 
