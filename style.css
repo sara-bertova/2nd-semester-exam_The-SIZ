@@ -943,6 +943,7 @@ footer ul.ig {
 
     .gallery-container {
         column-count: 2;
+        margin: 0 10vmin;
     }
 
     p.gal-name {
@@ -976,6 +977,12 @@ footer ul.ig {
     ul#submenu li {
         text-align: center;
         padding: 10px;
+    }
+
+    #topBtn {
+        right: 5px;
+        height: 90px;
+        width: 90px;
     }
 
 }
