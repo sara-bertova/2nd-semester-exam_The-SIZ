@@ -689,14 +689,14 @@ figure img:hover {
     margin: 0 50px;
     display: grid;
     grid-template-columns: 1fr auto 1fr;
-    grid-template-rows: 200px 150px auto;
+    grid-template-rows: 300px auto auto;
     column-gap: 20px;
 }
 
 .about_text,
 .about_intro {
     font-size: 18px;
-    /*font-weight: 600;*/
+    font-weight: 600;
     line-height: 25px;
 }
 
@@ -727,7 +727,7 @@ video {
     grid-row: 3;
     background-color: var(--blue-color);
     padding-left: 30px;
-    margin-top: 70px;
+    margin-top: -150px;
     z-index: -1;
 }
 
@@ -752,9 +752,12 @@ video {
 .about_text {
     grid-column: 3;
     grid-row: 2;
-    margin-top: 100px;
 }
 
+.resume_heading{
+    cursor: pointer;
+    letter-spacing: 3px;
+}
 
 /*CONTACT*/
 .contact_main {
@@ -844,13 +847,13 @@ footer ul.ig {
 @media only screen and (max-width: 1350px) {
     .about_main {
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto;
         column-gap: 50px;
     }
 
     video {
         width: 100%;
         margin-left: 0;
+        margin-top: 70px;
         grid-column: 1 / 3;
         grid-row: 5;
         margin-left: auto;
@@ -927,6 +930,11 @@ footer ul.ig {
         margin-top: 50px;
         grid-column: 1;
         grid-row: 5;
+    }
+
+    .resume_container{
+        grid-column: 1;
+        grid-row: 7;
     }
 
     .gallery-container {
