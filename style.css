@@ -35,117 +35,11 @@ body {
 }
 
 /*SHAPES*/
-.shape1{
-    height:15vmin;
-    width: auto;
-    position:absolute;
-    top: 30%;
-    left: 15%;
+.work , .index , .photoshoot{
+    background-image: url(shapes/shapes-all-01.svg);
+    background-repeat: repeat;
 }
-.shape2{
-    height:25vmin;
-    width: auto;
-    position:absolute;
-    top: 80%;
-    left: 50%;
-}
-.shape3{
-    height:15vmin;
-    width: auto;
-    position:absolute;
-    top: 120%;
-    left: 10%;
-}
-.shape4{
-    height:15vmin;
-    width: auto;
-    position:absolute;
-    top: 170%;
-    left: 30%;
-}
-.shape5{
-    height:25vmin;
-    width: auto;
-    position:absolute;
-    top: 220%;
-    left: 15%;
-}
-.shape6{
-    height:15vmin;
-    width: auto;
-    position:absolute;
-    top: 270%;
-    left: 40%;
-}
-.shape7{
-    height:15vmin;
-    width: auto;
-    position:absolute;
-    top: 330%;
-    left: 15%;
-}
-.shape8{
-    height:25vmin;
-    width: auto;
-    position:absolute;
-    top: 380%;
-    left: 50%;
-}
-.shape9{
-    height:15vmin;
-    width: auto;
-    position:absolute;
-    top: 430%;
-    left: 10%;
-}
-.shape10{
-    height:15vmin;
-    width: auto;
-    position:absolute;
-    top: 480%;
-    left: 30%;
-}
-.shape11{
-    height:25vmin;
-    width: auto;
-    position:absolute;
-    top: 530%;
-    left: 15%;
-}
-.shape12{
-    height:15vmin;
-    width: auto;
-    position:absolute;
-    top: 580%;
-    left: 40%;
-}
-.shape13{
-    height:15vmin;
-    width: auto;
-    position:absolute;
-    top: 650%;
-    left: 10%;
-}
-.shape14{
-    height:15vmin;
-    width: auto;
-    position:absolute;
-    top: 720%;
-    left: 30%;
-}
-.shape15{
-    height:25vmin;
-    width: auto;
-    position:absolute;
-    top: 780%;
-    left: 10%;
-}
-tr.shapes2{
-    visibility: collapse;
-}
-.disappear{
-  visibility: visible;
-}
+
 /*MENU*/
 nav {
     z-index: 100;
@@ -639,7 +533,7 @@ ul#submenu a.menu_other:hover {
     top: 0;
     right: 0;
     background: rgba(255, 255, 255, 0.5);
-    width: 30%;
+    width: 20%;
     height: 99.25%;
     color: var(--dark-blue);
 }
@@ -973,15 +867,8 @@ footer ul.ig {
     p.gal-name {
         font-size: 3vmin;
     }
-    .disappear{
-        visibility: visible;
-    }
 }
-@media only screen and (max-width:1120px){
-    .disappear{
-        visibility: hidden;
-    }
-}
+
 @media only screen and (max-width: 800px) {
 
     #loader_wrapper {
@@ -1049,9 +936,6 @@ footer ul.ig {
     .back_btn{
         margin-left: 20px;
     }
-    .disappear{
-        visibility: visible;
-    }
 }
 
 @media only screen and (max-width: 600px) {
@@ -1066,11 +950,5 @@ footer ul.ig {
 
     p.gal-name {
         font-size: 6vmin;
-    }
-    tr.shapes2{
-        visibility: visible;
-    }
-    .disappear{
-        visibility: visible;
     }
 }
