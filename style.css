@@ -985,4 +985,9 @@ footer ul.ig {
         width: 90px;
     }
 
+    .scroll-down {
+        left: 1%;
+        width: 80px;
+        height: 80px;
+    }
 }
