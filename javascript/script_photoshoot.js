@@ -27,6 +27,7 @@ function showSinglePhotoshoot(photoshoot) {
     const clone = modalTemplate.cloneNode(true);
 
     copy.querySelector("h1").innerHTML = photoshoot.title.rendered;
+    copy.querySelector(".description").innerHTML = photoshoot.excerpt.rendered;
 
     for (i = 0; i < photoshoot.full_size_images.length; i++) {
         const modalImg = document.createElement("img");
