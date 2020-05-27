@@ -558,6 +558,13 @@ p.gal-name {
 
 .photoshoot_title {
     writing-mode: vertical-rl;
+    font-size: 70px;
+    position: absolute;
+    right: 1%;
+}
+
+.description {
+    margin: 0 35%;
 }
 
 .sub-pic-gallery {
@@ -598,8 +605,9 @@ figure img:hover {
     opacity: 50%;
 }*/
 
-/*MODALS*/
 
+
+/*MODALS*/
 .hide {
     display: none;
 }
@@ -746,6 +754,7 @@ video {
     cursor: pointer;
     letter-spacing: 3px;
 }
+
 
 /*CONTACT*/
 .contact_main {
