@@ -35,7 +35,7 @@ body {
 }
 
 /*SHAPES*/
-.work , .index , .photoshoot{
+.work , .homepage_container , .photoshoot{
     background-image: url(shapes/shapes-all-01.svg);
     background-repeat: repeat;
 }
