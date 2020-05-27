@@ -35,7 +35,9 @@ body {
 }
 
 /*SHAPES*/
-.work , .homepage_container , .photoshoot{
+.work,
+.homepage_container,
+.photoshoot {
     background-image: url(shapes/shapes-all-01.svg);
     background-repeat: repeat;
 }
@@ -551,7 +553,7 @@ p.gal-name {
 
 
 /*PHOTOSHOOT PAGE*/
-.back_btn{
+.back_btn {
     margin-left: 200px;
     margin-top: 50px;
 }
@@ -612,7 +614,8 @@ figure img:hover {
     display: none;
 }
 
-.modal-background, .resume_modal_bg {
+.modal-background,
+.resume_modal_bg {
     position: fixed;
     z-index: 10;
     left: 0;
@@ -631,6 +634,7 @@ figure img:hover {
     margin-left: auto;
     margin-right: auto;
 }
+
 .modal-image {
     max-width: 50%;
     display: block;
@@ -639,7 +643,7 @@ figure img:hover {
     margin-top: 10%;
 }
 
-.resume_modal_content{
+.resume_modal_content {
     background-color: white;
     padding: 30px;
     width: 70%;
@@ -656,26 +660,29 @@ figure img:hover {
     column-gap: 50px;
 }
 
-.education_heading, .experiences_heading{
+.education_heading,
+.experiences_heading {
     text-transform: uppercase;
     letter-spacing: 3px;
 }
 
-.education_heading{
+.education_heading {
     grid-column: 1;
     margin: 0;
     align-self: flex-end;
 }
-.education_info{
+
+.education_info {
     grid-column: 1;
 }
 
-.experiences_heading{
+.experiences_heading {
     grid-column: 2;
     margin: 0;
     align-self: flex-end;
 }
-.experiences_info{
+
+.experiences_info {
     grid-column: 2;
 }
 
@@ -750,7 +757,7 @@ video {
     grid-row: 2;
 }
 
-.resume_heading{
+.resume_heading {
     cursor: pointer;
     letter-spacing: 3px;
 }
@@ -929,7 +936,7 @@ footer ul.ig {
         grid-row: 5;
     }
 
-    .resume_container{
+    .resume_container {
         grid-column: 1;
         grid-row: 7;
     }
@@ -942,7 +949,7 @@ footer ul.ig {
         font-size: 3vmin;
     }
 
-    .back_btn{
+    .back_btn {
         margin-left: 20px;
     }
 }
@@ -960,4 +967,15 @@ footer ul.ig {
     p.gal-name {
         font-size: 6vmin;
     }
+
+    ul#submenu {
+        display: block;
+        padding: 5px 0;
+    }
+
+    ul#submenu li {
+        text-align: center;
+        padding: 10px;
+    }
+
 }
