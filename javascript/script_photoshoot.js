@@ -20,43 +20,41 @@ if (the_photoshoot_id) {
 }
 
 function showSinglePhotoshoot(photoshoot) {
-    if (document.querySelector("#sub-gallery-template")) {
-        const subGalleryTemplate = document.querySelector("#sub-gallery-template").content;
-        const copy = subGalleryTemplate.cloneNode(true);
+    const subGalleryTemplate = document.querySelector("#sub-gallery-template").content;
+    const copy = subGalleryTemplate.cloneNode(true);
 
-        const modalTemplate = document.querySelector("#modalTempl").content;
-        const clone = modalTemplate.cloneNode(true);
+    const modalTemplate = document.querySelector("#modalTempl").content;
+    const clone = modalTemplate.cloneNode(true);
 
-        copy.querySelector("h1").innerHTML = photoshoot.title.rendered;
+    copy.querySelector("h1").innerHTML = photoshoot.title.rendered;
 
-        for (i = 0; i < photoshoot.full_size_images.length; i++) {
-            const modalImg = document.createElement("img");
-            modalImg.classList.add("modal-image");
-            modalImg.src = photoshoot.full_size_images[i].guid;
+    for (i = 0; i < photoshoot.full_size_images.length; i++) {
+        const modalImg = document.createElement("img");
+        modalImg.classList.add("modal-image");
+        modalImg.src = photoshoot.full_size_images[i].guid;
 
-            clone.querySelector(".modal-content").append(modalImg);
-        }
+        clone.querySelector(".modal-content").append(modalImg);
+    }
 
-        document.querySelector(".singlePic").append(clone);
+    document.querySelector(".singlePic").append(clone);
 
-        for (i = 0; i < photoshoot.photoshoot_images.length; i++) {
-            const shootImg = document.createElement("img");
-            shootImg.src = photoshoot.photoshoot_images[i].guid;
-            shootImg.addEventListener("click", () => {
-                modal.classList.remove("hide");
-            });
+    for (i = 0; i < photoshoot.photoshoot_images.length; i++) {
+        const shootImg = document.createElement("img");
+        shootImg.src = photoshoot.photoshoot_images[i].guid;
+        shootImg.addEventListener("click", () => {
+            modal.classList.remove("hide");
+        });
 
-            copy.querySelector(".sub-pic-gallery").append(shootImg);
-        }
+        copy.querySelector(".sub-pic-gallery").append(shootImg);
+    }
 
-        document.querySelector(".singlePhotoshoot").appendChild(copy);
+    document.querySelector(".singlePhotoshoot").appendChild(copy);
 
-        //MODAL
-        const modal = document.querySelector(".modal-background");
-        if (modal) {
-            modal.addEventListener("click", () => {
-                modal.classList.add("hide");
-            });
-        }
+    //MODAL
+    const modal = document.querySelector(".modal-background");
+    if (modal) {
+        modal.addEventListener("click", () => {
+            modal.classList.add("hide");
+        });
     }
 }
