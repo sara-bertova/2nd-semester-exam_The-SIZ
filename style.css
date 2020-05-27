@@ -565,10 +565,15 @@ p.gal-name {
     grid-column: 2;
 }
 
-.singlePhotoshoot img{
+.singlePhotoshoot img {
     width: 300px;
+    cursor: pointer;
+    transition: .5s;
 }
 
+.singlePhotoshoot img:hover {
+      opacity: 70%;
+}
 
 .description {
     margin: 0 35%;

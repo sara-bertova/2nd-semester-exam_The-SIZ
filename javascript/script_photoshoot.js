@@ -11,28 +11,36 @@ if (the_photoshoot_id) {
         })
 }
 
-function showSinglePhotoshoot(photoshootData){
+function showSinglePhotoshoot(photoshootData) {
 
-    for (i = 0; i < photoshootData.photoshoot_images.length; i++){
+    for (i = 0; i < photoshootData.photoshoot_images.length; i++) {
         const img = document.createElement("img");
         img.src = photoshootData.photoshoot_images[i].guid;
 
-        if (i % 2 == 0){
+        if (i % 2 == 0) {
             document.querySelector(".single_photoshoot_left").append(img);
         } else {
             document.querySelector(".single_photoshoot_right").append(img);
         }
 
         img.setAttribute('big_image_path',
-                         photoshootData.full_size_images[i].guid);
-        img.addEventListener("click", function(e) {
+            photoshootData.full_size_images[i].guid);
+        img.addEventListener("click", function (e) {
             modal.classList.remove("hide");
             document.querySelector(".modal-image").src = e.currentTarget.attributes.big_image_path.value;
         });
 
-        if (i == 1){
-           const description = document.createElement("p");
-        description.textContent = photoshootData.description; document.querySelector(".single_photoshoot_left").append(description);
+        if (i == 1) {
+            const description = document.createElement("p");
+            description.innerHTML = photoshootData.excerpt.rendered;
+
+            const title = document.createElement("h1");
+            title.innerHTML = photoshootData.title.rendered;
+            title.classList.add("photoshoot_title");
+
+            document.querySelector(".single_photoshoot_left").append(title);
+            document.querySelector(".single_photoshoot_left").append(description);
+
         }
 
     }
