@@ -19,7 +19,7 @@ function handleHomepageData(jsonData) {
 
 function showPhoto(onePhoto) {
 
-    // Creates element "img" and "in the document"
+    // Creates element "img" and "p" in the document"
     const homepageImg = document.createElement("img");
     const quote = document.createElement("p");
 
@@ -29,8 +29,8 @@ function showPhoto(onePhoto) {
         document.querySelector(".homepage_1column").append(homepageImg);
     } else if (onePhoto.number <= 6) {
         if (onePhoto.number == 5) {
-            quote.textContent = "Dreamy";
-            quote.classList.add("homepage_quote1");
+            quote.textContent = "Mysterious";
+            quote.classList.add("homepage_quote2");
             document.querySelector(".homepage_2column").append(quote);
         }
         document.querySelector(".homepage_2column").append(homepageImg);
@@ -40,8 +40,8 @@ function showPhoto(onePhoto) {
         document.querySelector(".homepage_4column").append(homepageImg);
     } else if (onePhoto.number <= 17) {
         if (onePhoto.number == 16) {
-            quote.textContent = "Mysterious";
-            quote.classList.add("homepage_quote2");
+            quote.textContent = "Dreamy";
+            quote.classList.add("homepage_quote1");
             document.querySelector(".homepage_5column").append(quote);
         }
         document.querySelector(".homepage_5column").append(homepageImg);
