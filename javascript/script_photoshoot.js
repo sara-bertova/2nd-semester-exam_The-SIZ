@@ -1,11 +1,3 @@
-/*
-//LOADER
-setTimeout(function(){
-            document.getElementById("loader_wrapper") .style.display = "none";
-         }, 2000);
-*/
-
-
 const urlParams = new URLSearchParams(window.location.search);
 const the_photoshoot_id = urlParams.get("photoshoot_id");
 
@@ -19,38 +11,33 @@ if (the_photoshoot_id) {
         })
 }
 
-function showSinglePhotoshoot(photoshoot) {
-    const subGalleryTemplate = document.querySelector("#sub-gallery-template").content;
-    const copy = subGalleryTemplate.cloneNode(true);
+function showSinglePhotoshoot(photoshootData){
 
-    const modalTemplate = document.querySelector("#modalTempl").content;
-    const clone = modalTemplate.cloneNode(true);
+    for (i = 0; i < photoshootData.photoshoot_images.length; i++){
+        const img = document.createElement("img");
+        img.src = photoshootData.photoshoot_images[i].guid;
 
-    copy.querySelector("h1").innerHTML = photoshoot.title.rendered;
+        if (i % 2 == 0){
+            document.querySelector(".single_photoshoot_left").append(img);
+        } else {
+            document.querySelector(".single_photoshoot_right").append(img);
+        }
 
-    for (i = 0; i < photoshoot.full_size_images.length; i++) {
-        const modalImg = document.createElement("img");
-        modalImg.classList.add("modal-image");
-        modalImg.src = photoshoot.full_size_images[i].guid;
-
-        clone.querySelector(".modal-content").append(modalImg);
-    }
-
-    document.querySelector(".singlePic").append(clone);
-
-    for (i = 0; i < photoshoot.photoshoot_images.length; i++) {
-        const shootImg = document.createElement("img");
-        shootImg.src = photoshoot.photoshoot_images[i].guid;
-        shootImg.addEventListener("click", () => {
+        img.setAttribute('big_image_path',
+                         photoshootData.full_size_images[i].guid);
+        img.addEventListener("click", function(e) {
             modal.classList.remove("hide");
+            document.querySelector(".modal-image").src = e.currentTarget.attributes.big_image_path.value;
         });
 
-        copy.querySelector(".sub-pic-gallery").append(shootImg);
+        if (i == 1){
+           const description = document.createElement("p");
+        description.textContent = photoshootData.description; document.querySelector(".single_photoshoot_left").append(description);
+        }
+
     }
 
-    document.querySelector(".singlePhotoshoot").appendChild(copy);
-
-    //MODAL
+    // Add click handler for modal picture to hide picture
     const modal = document.querySelector(".modal-background");
     if (modal) {
         modal.addEventListener("click", () => {
