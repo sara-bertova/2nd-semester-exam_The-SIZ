@@ -1,8 +1,9 @@
+// Adds style.display = "none" to the loader after 2.3 seconds to remove it
 setTimeout(function(){
-            document.getElementById("loader_wrapper") .style.display = "none";
+            document.getElementById("loader_wrapper").style.display = "none";
          }, 2300);
 
-
+// Fetching data for homepage photos
 fetch("http://www.rasbery.eu/2nd-semester-exam/wp-json/wp/v2/homepage_photo?per_page=19")
     .then(function (response) {
         return response.json()
@@ -18,6 +19,7 @@ function handleHomepageData(jsonData) {
 
 function showPhoto(onePhoto) {
 
+    // Creates element "img" and "in the document"
     const homepageImg = document.createElement("img");
     const quote = document.createElement("p");
 
