@@ -651,7 +651,13 @@ figure img:hover {
     opacity: 50%;
 }*/
 
-.modal-background {
+/*MODALS*/
+
+.hide {
+    display: none;
+}
+
+.modal-background, .resume_modal_bg {
     position: fixed;
     z-index: 10;
     left: 0;
@@ -670,7 +676,6 @@ figure img:hover {
     margin-left: auto;
     margin-right: auto;
 }
-
 .modal-image {
     max-width: 50%;
     display: block;
@@ -679,8 +684,44 @@ figure img:hover {
     margin-top: 10%;
 }
 
-.hide {
-    display: none;
+.resume_modal_content{
+    background-color: white;
+    padding: 30px;
+    width: 70%;
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-left: auto;
+    margin-right: auto;
+
+    display: grid;
+    grid-column: 1fr 1fr;
+    column-gap: 50px;
+}
+
+.education_heading, .experiences_heading{
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.education_heading{
+    grid-column: 1;
+    margin: 0;
+    align-self: flex-end;
+}
+.education_info{
+    grid-column: 1;
+}
+
+.experiences_heading{
+    grid-column: 2;
+    margin: 0;
+    align-self: flex-end;
+}
+.experiences_info{
+    grid-column: 2;
 }
 
 
