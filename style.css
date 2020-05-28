@@ -948,6 +948,11 @@ footer ul.ig {
     .photoshoot_title {
         margin-left: -70px;
     }
+
+    p.artist_name {
+        font-size: 90px;
+        letter-spacing: 10px;
+    }
 }
 
 @media only screen and (max-width: 800px) {
@@ -1055,12 +1060,14 @@ footer ul.ig {
     .contact1 {
         margin-top: 15vmin;
     }
+
 }
 
 @media only screen and (max-width: 600px) {
 
-    .artist_name {
+    p.artist_name {
         font-size: 40px;
+        text-align: left;
     }
 
     .gallery_container {
