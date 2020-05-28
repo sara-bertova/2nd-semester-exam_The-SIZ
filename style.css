@@ -450,31 +450,6 @@ ul#submenu a.menu_other:hover {
 
 
 /*WORK - GALLERY*/
-/*
-.work_submenu {
-    margin-top: 20px;
-    background-color: var(--blue-color);
-    padding: 5px 0;
-    letter-spacing: 3px;
-}
-
-.submenu_other,
-.submenu_selected {
-    font-size: 25px;
-    font-weight: 600;
-    color: white;
-}
-
-.submenu_other {
-    text-decoration: none;
-}
-
-.submenu_selected,
-.submenu_other:hover {
-    text-decoration: line-through;
-    text-decoration-color: var(--red-color);
-}
-*/
 
 .gallery {
     position: relative;
@@ -733,7 +708,7 @@ video {
     grid-row: 3;
     background-color: var(--blue-color);
     padding-left: 30px;
-    margin-top: -150px;
+    margin-top: -200px;
     z-index: -1;
 }
 
@@ -762,6 +737,11 @@ video {
 .resume_heading {
     cursor: pointer;
     letter-spacing: 3px;
+    transition: .5s;
+}
+
+.resume_heading:hover{
+    color: var(--red-color);
 }
 
 
