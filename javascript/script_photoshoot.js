@@ -17,6 +17,9 @@ function showSinglePhotoshoot(photoshootData) {
         const img = document.createElement("img");
         img.src = photoshootData.photoshoot_images[i].guid;
 
+        // Images sorted to 2 columns acording to its position in list:
+        // even images are placed to left column
+        // odd images are placed to right column
         if (i % 2 == 0) {
             document.querySelector(".single_photoshoot_left").append(img);
         } else {
@@ -30,6 +33,7 @@ function showSinglePhotoshoot(photoshootData) {
             document.querySelector(".modal-image").src = e.currentTarget.attributes.big_image_path.value;
         });
 
+        // After second image (index is 1) the description is placed to the page
         if (i == 1) {
             const description = document.createElement("p");
             description.innerHTML = photoshootData.excerpt.rendered;
@@ -38,15 +42,14 @@ function showSinglePhotoshoot(photoshootData) {
 
         }
 
-        if (i == 0) {
-            const title = document.createElement("h1");
-            title.innerHTML = photoshootData.title.rendered;
-            title.classList.add("photoshoot_title");
-
-            document.querySelector(".single_photoshoot_middle").append(title);
-        }
-
     }
+
+    // Finally the title is placed to the middle column
+    const title = document.createElement("h1");
+    title.innerHTML = photoshootData.title.rendered;
+    title.classList.add("photoshoot_title");
+
+    document.querySelector(".single_photoshoot_middle").append(title);
 
     // Add click handler for modal picture to hide picture
     const modal = document.querySelector(".modal-background");
