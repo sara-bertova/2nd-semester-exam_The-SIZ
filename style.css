@@ -277,7 +277,7 @@ path.cls-3 {
     animation: .75s alternate infinite bounce;
 }
 
-.scroll-down {
+.scroll_down {
     position: absolute;
     left: 5%;
     margin-left: -20px;
@@ -1090,7 +1090,7 @@ footer ul.ig {
         width: 90px;
     }
 
-    .scroll-down {
+    .scroll_down {
         left: 1%;
         width: 80px;
         height: 80px;

@@ -33,8 +33,8 @@ function showSinglePhotoshoot(photoshootData) {
             document.querySelector(".modal_image").src = e.currentTarget.attributes.big_image_path.value;
         });
 
-        // After second image (index is 1) the description is placed to the page
-        if (i == 1) {
+
+        if (i == 0) {
             const description = document.createElement("p");
             description.innerHTML = photoshootData.excerpt.rendered;
             description.classList.add("description");
