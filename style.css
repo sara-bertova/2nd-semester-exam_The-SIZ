@@ -35,10 +35,11 @@ body {
 }
 
 /*SHAPES*/
-.work , .homepage_container , .photoshoot , .about ,{
+.work , .homepage_container , .photoshoot , .about {
 
     background-image: url(shapes/shapes-all-01.svg);
     background-repeat: repeat;
+
 }
 .contact_body{
     background-image: url(shapes/shapes-all-01.svg);
