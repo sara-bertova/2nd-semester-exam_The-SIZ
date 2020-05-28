@@ -133,6 +133,9 @@ input {
 }
 .menu ul li a {
     display: block;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
     color: var(--sand-color);
     transition: color 0.2s;
     text-transform: uppercase;
@@ -148,8 +151,6 @@ input {
 }
 .menu ul li a:hover {
     color: var(--blue-color);
-}
-.menu ul li:hover {
     background: var(--sand-color);
 }
 
