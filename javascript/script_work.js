@@ -13,6 +13,7 @@ function handleSubmenuData(jsonData) {
     jsonData.forEach(showSubmenu);
 }
 
+
 const urlParams = new URLSearchParams(window.location.search);
 const categoryId = urlParams.get("category_id");
 
@@ -56,18 +57,20 @@ if (categoryId) {
         })
 }
 
+
 function handleGalleryData(jsonData) {
     jsonData.reverse();
     jsonData.forEach(showGallery);
 }
 
+
 function showGallery(oneShoot) {
     const template = document.querySelector("#galleryTempl").content;
     const clone = template.cloneNode(true);
 
-    const gallery_link = clone.querySelector(".gallery-link");
-    if (gallery_link) {
-        gallery_link.href += oneShoot.id;
+    const galleryLink = clone.querySelector(".gallery-link");
+    if (galleryLink) {
+        galleryLink.href += oneShoot.id;
     }
 
     clone.querySelector(".gal-image").src = oneShoot.cover_image.guid;
@@ -76,4 +79,3 @@ function showGallery(oneShoot) {
     document.querySelector(".gallery-container").appendChild(clone);
 
 }
-
