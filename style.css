@@ -301,7 +301,7 @@ path.cls-3 {
 
 
 /*BTT BUTTON*/
-#topBtn {
+#top_Btn {
     background: url(icons/bttb-21.svg) no-repeat;
     position: fixed;
     bottom: 20px;
@@ -320,7 +320,7 @@ path.cls-3 {
 
 }
 
-#topBtn:hover {
+#top_Btn:hover {
     background: url("icons/bttb-hover-21.svg") no-repeat;
 }
 
@@ -629,6 +629,7 @@ sub-pic-gallery img {
 .sub-gallery img:hover {
     opacity: 50%;
 }
+
 
 /*MODALS*/
 .hide {
@@ -1083,7 +1084,7 @@ footer ul.ig {
         padding: 10px;
     }
 
-    #topBtn {
+    #top_Btn {
         right: 5px;
         height: 90px;
         width: 90px;
