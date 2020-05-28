@@ -6,7 +6,7 @@ window.addEventListener("load", function () {
 })*/
 
 //GO TO TOP BTN
-var topBtn = document.getElementById("topBtn");
+var topBtn = document.getElementById("top_Btn");
 //enable/disable scroll button based on scroller position
 function scrollFunction() {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {

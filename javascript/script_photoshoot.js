@@ -30,7 +30,7 @@ function showSinglePhotoshoot(photoshootData) {
             photoshootData.full_size_images[i].guid);
         img.addEventListener("click", function (e) {
             modal.classList.remove("hide");
-            document.querySelector(".modal-image").src = e.currentTarget.attributes.big_image_path.value;
+            document.querySelector(".modal_image").src = e.currentTarget.attributes.big_image_path.value;
         });
 
         // After second image (index is 1) the description is placed to the page
@@ -52,7 +52,7 @@ function showSinglePhotoshoot(photoshootData) {
     document.querySelector(".single_photoshoot_middle").append(title);
 
     // Add click handler for modal picture to hide picture
-    const modal = document.querySelector(".modal-background");
+    const modal = document.querySelector(".modal_background");
     if (modal) {
         modal.addEventListener("click", () => {
             modal.classList.add("hide");

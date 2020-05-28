@@ -65,17 +65,17 @@ function handleGalleryData(jsonData) {
 
 
 function showGallery(oneShoot) {
-    const template = document.querySelector("#galleryTempl").content;
+    const template = document.querySelector("#gallery_templ").content;
     const clone = template.cloneNode(true);
 
-    const galleryLink = clone.querySelector(".gallery-link");
+    const galleryLink = clone.querySelector(".gallery_link");
     if (galleryLink) {
         galleryLink.href += oneShoot.id;
     }
 
-    clone.querySelector(".gal-image").src = oneShoot.cover_image.guid;
-    clone.querySelector(".gal-name").innerHTML = oneShoot.title.rendered;
+    clone.querySelector(".gal_image").src = oneShoot.cover_image.guid;
+    clone.querySelector(".gal_name").innerHTML = oneShoot.title.rendered;
 
-    document.querySelector(".gallery-container").appendChild(clone);
+    document.querySelector(".gallery_container").appendChild(clone);
 
 }

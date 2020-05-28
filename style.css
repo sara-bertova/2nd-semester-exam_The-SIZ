@@ -492,7 +492,7 @@ ul#submenu a.menu_other:hover {
     /*z-index: -1;*/
 }
 
-.gallery-container {
+.gallery_container {
     margin: 0 20vmin;
     column-count: 3;
     column-gap: 50px;
@@ -500,12 +500,12 @@ ul#submenu a.menu_other:hover {
     padding-bottom: 50px;
 }
 
-.pic-gallery {
+.pic_gallery {
     margin-bottom: 50px;
     transition: .2s;
 }
 
-.pic-gallery:hover .gallery-text {
+.pic_gallery:hover .gallery_text {
     position: absolute;
     top: 0;
     right: 0;
@@ -516,7 +516,7 @@ ul#submenu a.menu_other:hover {
     transition: .5s;
 }
 
-.gallery-text {
+.gallery_text {
     position: absolute;
     top: 0;
     right: 0;
@@ -526,7 +526,7 @@ ul#submenu a.menu_other:hover {
     color: var(--dark-blue);
 }
 
-p.gal-name {
+p.gal_name {
     margin: 0;
     padding-top: 8px;
     padding-left: 8px;
@@ -546,7 +546,7 @@ p.gal-name {
     margin-top: 50px;
 }
 
-.singlePhotoshoot {
+.single_photoshoot_sec {
     display: grid;
     grid-template-columns: 1fr .2fr 1fr;
     max-width: 1000px;
@@ -586,13 +586,13 @@ p.gal-name {
     writing-mode: vertical-rl;
 }
 
-.singlePhotoshoot img {
+.single_photoshoot_sec img {
     width: 300px;
     cursor: pointer;
     transition: .5s;
 }
 
-.singlePhotoshoot img:hover {
+.single_photoshoot_sec img:hover {
     opacity: 70%;
 }
 
@@ -636,7 +636,7 @@ sub-pic-gallery img {
     display: none;
 }
 
-.modal-background,
+.modal_background,
 .resume_modal_bg {
     position: fixed;
     z-index: 10;
@@ -649,7 +649,7 @@ sub-pic-gallery img {
     overflow: auto;
 }
 
-.modal-content {
+.modal_content {
     background-color: transparent;
     padding: 0;
     width: 90%;
@@ -657,7 +657,7 @@ sub-pic-gallery img {
     margin-right: auto;
 }
 
-.modal-image {
+.modal_image {
     max-width: 33%;
     display: block;
     margin: 4% auto;
@@ -818,7 +818,7 @@ video {
     grid-row: 4/5;
 }
 
-ul.con-icons {
+ul.con_icons {
     grid-column: 2;
     grid-row: 5/6;
     display: flex;
@@ -935,7 +935,7 @@ footer ul.ig {
         grid-row: 2 / 4;
     }
 
-    p.gal-name {
+    p.gal_name {
         font-size: 3vmin;
     }
 
@@ -1000,12 +1000,12 @@ footer ul.ig {
         grid-row: 7;
     }
 
-    .gallery-container {
+    .gallery_container {
         column-count: 2;
         margin: 0 10vmin;
     }
 
-    p.gal-name {
+    p.gal_name {
         font-size: 3vmin;
     }
 
@@ -1013,7 +1013,7 @@ footer ul.ig {
         margin-left: 20px;
     }
 
-    .singlePhotoshoot {
+    .single_photoshoot_sec {
         grid-template-columns: 1fr;
     }
 
@@ -1057,11 +1057,11 @@ footer ul.ig {
         font-size: 40px;
     }
 
-    .gallery-container {
+    .gallery_container {
         column-count: 1;
     }
 
-    p.gal-name {
+    p.gal_name {
         font-size: 6vmin;
     }
 
