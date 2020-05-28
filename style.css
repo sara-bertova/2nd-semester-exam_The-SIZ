@@ -180,9 +180,15 @@ input {
     transition: all 0.5s;
 }
 
-.artist_name {
-    color: #90B2C4;
+p.artist_name {
+    color: var(--light-blue);
     font-weight: bold;
+    opacity: 30%;
+    margin: 0;
+    font-size: 150px;
+    letter-spacing: 5px;
+    margin-top: 25px;
+    /*color: #90B2C4;*/
 }
 
 #menu_toggle:checked ~ .menu_effects {
