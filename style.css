@@ -537,8 +537,7 @@ p.gal-name {
 
 .singlePhotoshoot{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 100px;
+    grid-template-columns: 1fr .2fr 1fr;
     max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
@@ -548,7 +547,6 @@ p.gal-name {
     grid-column: 1;
     display: flex;
     flex-direction: column;
-
     align-items: center;
 }
 
@@ -556,8 +554,12 @@ p.gal-name {
     margin: 20px 0;
 }
 
-.single_photoshoot_right{
+.single_photoshoot_middle{
     grid-column: 2;
+}
+
+.single_photoshoot_right{
+    grid-column: 3;
     margin-top: 100px;
     display: flex;
     flex-direction: column;
@@ -565,7 +567,11 @@ p.gal-name {
 }
 
 .photoshoot_title {
+    margin: 0;
+    padding: 20px;
+    margin-left: -50px;
     font-size: 70px;
+    writing-mode: vertical-rl;
 }
 
 .singlePhotoshoot img {

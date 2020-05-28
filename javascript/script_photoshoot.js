@@ -34,7 +34,6 @@ function showSinglePhotoshoot(photoshootData) {
             const description = document.createElement("p");
             description.innerHTML = photoshootData.excerpt.rendered;
             description.classList.add("description");
-
             document.querySelector(".single_photoshoot_left").append(description);
 
         }
@@ -44,7 +43,7 @@ function showSinglePhotoshoot(photoshootData) {
             title.innerHTML = photoshootData.title.rendered;
             title.classList.add("photoshoot_title");
 
-            document.querySelector(".single_photoshoot_right").append(title);
+            document.querySelector(".single_photoshoot_middle").append(title);
         }
 
     }
