@@ -517,6 +517,8 @@ ul#submenu a.menu_other:hover {
 
 p.gal-name {
     margin: 0;
+    padding-top: 5px;
+    padding-left: 5px;
     writing-mode: vertical-rl;
     font-size: 30px;
 }
@@ -546,10 +548,12 @@ p.gal-name {
     grid-column: 1;
     display: flex;
     flex-direction: column;
+
+    align-items: center;
 }
 
 .single_photoshoot_left > * , .single_photoshoot_right > * {
-  margin: 20px 0;
+    margin: 20px 0;
 }
 
 .single_photoshoot_right{
@@ -557,12 +561,11 @@ p.gal-name {
     margin-top: 100px;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .photoshoot_title {
-    writing-mode: vertical-rl;
     font-size: 70px;
-    grid-column: 2;
 }
 
 .singlePhotoshoot img {
@@ -576,7 +579,7 @@ p.gal-name {
 }
 
 .description {
-    margin: 0 35%;
+    padding: 20px;
 }
 
 .sub-pic-gallery {

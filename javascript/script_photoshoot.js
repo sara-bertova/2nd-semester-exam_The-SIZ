@@ -33,14 +33,18 @@ function showSinglePhotoshoot(photoshootData) {
         if (i == 1) {
             const description = document.createElement("p");
             description.innerHTML = photoshootData.excerpt.rendered;
+            description.classList.add("description");
 
+            document.querySelector(".single_photoshoot_left").append(description);
+
+        }
+
+        if (i == 0) {
             const title = document.createElement("h1");
             title.innerHTML = photoshootData.title.rendered;
             title.classList.add("photoshoot_title");
 
-            document.querySelector(".single_photoshoot_left").append(title);
-            document.querySelector(".single_photoshoot_left").append(description);
-
+            document.querySelector(".single_photoshoot_right").append(title);
         }
 
     }
