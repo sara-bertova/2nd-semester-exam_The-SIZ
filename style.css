@@ -365,28 +365,18 @@ path.cls-3 {
     margin-top: 50px;
 }
 
-.homepage_quote1 {
-    text-align: center;
-    width: 200px;
+.homepage_name{
+    width: 250px;
     font-size: 50px;
     margin-top: 50px;
     margin-bottom: 0;
-    animation: quoteFading1 5s infinite;
-    animation-delay: 2s;
 }
 
-@keyframes quoteFading1 {
-    0% {
-        opacity: 1;
-    }
-
-    50% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
+.homepage_surname{
+    width: 250px;
+    font-size: 50px;
+    margin-bottom: 0;
+    margin-top: 0;
 }
 
 .homepage_3column {
@@ -427,17 +417,36 @@ path.cls-3 {
     margin-top: 50px;
 }
 
-.homepage_quote2 {
-    text-align: center;
-    width: 250px;
-    font-size: 30px;
+.homepage_quote1{
+    animation: quoteFading1 6s infinite;
+    animation:
     margin-top: 50px;
-    margin-bottom: 0;
-    animation: quoteFading2 5s infinite;
-    animation-delay: 5s;
+    font-size: 50px;
 }
 
-@keyframes quoteFading2 {
+.homepage_quote2{
+    animation: quoteFading2 6s infinite;
+    animation-delay: 6s;
+    opacity: 0;
+    margin-top: -50px;
+    font-size: 30px;
+}
+
+/*.homepage_quote3{
+    animation: quoteFading2 5s infinite;
+    animation-delay: 12s;
+    opacity: 0;
+    margin-top: -35px;
+    font-size: 30px;
+}*/
+
+.homepage_quote1, .homepage_quote2, .homepage_quote3 {
+    text-align: center;
+    width: 200px;
+    margin-bottom: 0;
+}
+
+@keyframes quoteFading1 {
     0% {
         opacity: 1;
     }
@@ -448,6 +457,21 @@ path.cls-3 {
 
     100% {
         opacity: 1;
+    }
+}
+
+
+@keyframes quoteFading2 {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
     }
 }
 
@@ -491,11 +515,9 @@ ul#submenu a.menu_other:hover {
 
 
 /*WORK - GALLERY*/
-
 .gallery {
     position: relative;
     cursor: pointer;
-    /*z-index: -1;*/
 }
 
 .gallery_container {
@@ -731,16 +753,15 @@ sub-pic-gallery img {
 
 .about_heading {
     padding: 0;
-    margin: 0;
     grid-column: 1;
     grid-row: 1;
-    align-self: flex-end;
+    align-self: center;
 
 }
 
 .paragraph1 {
     padding: 0;
-    margin-top: 10px;
+    margin-top: -120px;
     grid-column: 1;
     grid-row: 2;
 }
@@ -980,6 +1001,10 @@ footer ul.ig {
         grid-template-rows: auto;
     }
 
+    .paragraph1{
+        margin-top: 0;
+    }
+
     video {
         padding: 0;
         width: 100%;
@@ -1009,6 +1034,35 @@ footer ul.ig {
     .resume_container {
         grid-column: 1;
         grid-row: 7;
+    }
+
+    .resume_modal_content {
+        grid-column: 1fr;
+    }
+
+    .education_heading {
+        grid-column: 1;
+        grid-row: 1;
+        align-self: flex-end;
+    }
+
+    .education_info {
+        grid-column: 1;
+        grid-row: 2;
+        margin-top: 0;
+    }
+
+    .experiences_heading {
+        grid-column: 1;
+        grid-row: 3;
+        margin: 0;
+        align-self: flex-end;
+    }
+
+    .experiences_info {
+        grid-column: 1;
+        grid-row: 4;
+        margin-top: 0;
     }
 
     .gallery_container {

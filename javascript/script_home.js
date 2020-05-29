@@ -31,10 +31,16 @@ function showPhoto(onePhoto) {
         // Special handeling for image with index 5
         // befor image, the quote is added
         if (onePhoto.number == 5) {
-            var quote = document.createElement("p");
-            quote.textContent = "Mysterious";
-            quote.classList.add("homepage_quote2");
-            document.querySelector(".homepage_2column").append(quote);
+            var name = document.createElement("p");
+            var surname = document.createElement("p");
+
+            name.textContent = "Mikkel";
+            surname.textContent = "Schwitzer";
+
+            name.classList.add("homepage_name");
+            surname.classList.add("homepage_surname");
+
+            document.querySelector(".homepage_2column").append(name, surname);
         }
         document.querySelector(".homepage_2column").append(homepageImg);
     } else if (onePhoto.number <= 11) {
@@ -45,10 +51,19 @@ function showPhoto(onePhoto) {
         // Special handeling for image with index 16
         // befor image, the quote is added
         if (onePhoto.number == 16) {
-            var quote = document.createElement("p");
-            quote.textContent = "Dreamy";
-            quote.classList.add("homepage_quote1");
-            document.querySelector(".homepage_5column").append(quote);
+            var quote1 = document.createElement("p");
+            var quote2 = document.createElement("p");
+            var quote3 = document.createElement("p");
+
+            quote1.textContent = "Dreamy";
+            quote2.textContent = "Myterious";
+            quote3.textContent = "Surrealistic";
+
+            quote1.classList.add("homepage_quote1");
+            quote2.classList.add("homepage_quote2");
+            quote3.classList.add("homepage_quote3");
+
+            document.querySelector(".homepage_5column").append(quote1, quote2, quote3);
         }
         document.querySelector(".homepage_5column").append(homepageImg);
     } else if (onePhoto.number <= 19) {
