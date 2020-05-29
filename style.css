@@ -193,17 +193,6 @@ input {
     transition: all 0.5s;
 }
 
-p.artist_name {
-    color: var(--light-blue);
-    font-weight: bold;
-    opacity: 30%;
-    margin: 0;
-    font-size: 150px;
-    letter-spacing: 5px;
-    margin-top: 25px;
-    /*color: #90B2C4;*/
-}
-
 #menu_toggle:checked ~ .menu_effects {
     opacity: 1;
     visibility: visible;
@@ -432,7 +421,6 @@ path.cls-3 {
 
 .homepage_quote1 {
     animation: quoteFading1 6s infinite;
-    animation-delay: 5s;
     opacity: 0;
     margin-top: 50px;
     font-size: 50px;
@@ -440,7 +428,6 @@ path.cls-3 {
 
 .homepage_quote2 {
     animation: quoteFading2 6s infinite;
-    animation-delay: 3s;
     opacity: 0;
     margin-top: -50px;
     font-size: 30px;
@@ -463,15 +450,24 @@ path.cls-3 {
 
 @keyframes quoteFading1 {
     0% {
-        opacity: 0;
+        opacity: 0.5;
     }
 
-    20% {
+    14% {
         opacity: 1;
     }
 
-    40% {
+    28% {
+        opacity: 1;
+    }
+    42%{
         opacity: 0;
+    }
+    84%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0.5;
     }
 }
 
@@ -480,12 +476,16 @@ path.cls-3 {
     0% {
         opacity: 0;
     }
-
-    40% {
+    28% {
+        opacity: 0;
+    }
+    42%{
         opacity: 1;
     }
-
-    60% {
+    56%{
+        opacity: 1;
+    }
+    70%{
         opacity: 0;
     }
 }
@@ -494,11 +494,16 @@ path.cls-3 {
     0% {
         opacity: 0;
     }
-
-    60% {
+    56%{
+        opacity: 0;
+    }
+    70%{
         opacity: 1;
     }
-    80%{
+    84%{
+        opacity: 1;
+    }
+    100%{
         opacity: 0;
     }
 }
@@ -969,11 +974,6 @@ footer ul.ig {
     .photoshoot_title {
         margin-left: -70px;
     }
-
-    p.artist_name {
-        font-size: 90px;
-        letter-spacing: 10px;
-    }
 }
 
 
@@ -1126,11 +1126,6 @@ footer ul.ig {
 
 
 @media only screen and (max-width: 600px) {
-
-    p.artist_name {
-        font-size: 40px;
-        text-align: left;
-    }
 
     .gallery_container {
         column-count: 1;
