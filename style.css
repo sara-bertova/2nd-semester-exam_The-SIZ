@@ -421,7 +421,6 @@ path.cls-3 {
 
 .homepage_quote1 {
     animation: quoteFading1 6s infinite;
-    animation-delay: 5s;
     opacity: 0;
     margin-top: 50px;
     font-size: 50px;
@@ -429,14 +428,13 @@ path.cls-3 {
 
 .homepage_quote2 {
     animation: quoteFading2 6s infinite;
-    animation-delay: 3s;
     opacity: 0;
     margin-top: -50px;
     font-size: 30px;
 }
 
 .homepage_quote3{
-    animation: quoteFading3 6s infinite;
+    animation: quoteFading3 7s infinite;
     opacity: 0;
     margin-top: -35px;
     font-size: 30px;
@@ -455,11 +453,14 @@ path.cls-3 {
         opacity: 0;
     }
 
-    20% {
+    16.5% {
         opacity: 1;
     }
 
-    40% {
+    33% {
+        opacity: 1;
+    }
+    49.5%{
         opacity: 0;
     }
 }
@@ -469,12 +470,16 @@ path.cls-3 {
     0% {
         opacity: 0;
     }
-
-    40% {
+    33% {
+        opacity: 0;
+    }
+    49.5%{
         opacity: 1;
     }
-
-    60% {
+    66%{
+        opacity: 1;
+    }
+    84%{
         opacity: 0;
     }
 }
@@ -483,11 +488,16 @@ path.cls-3 {
     0% {
         opacity: 0;
     }
-
-    60% {
+    58%{
+        opacity: 0;
+    }
+    72%{
         opacity: 1;
     }
-    80%{
+    86%{
+        opacity: 1;
+    }
+    100%{
         opacity: 0;
     }
 }
