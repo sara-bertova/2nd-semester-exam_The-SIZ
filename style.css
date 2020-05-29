@@ -52,10 +52,11 @@ body {
 
 /*LOGO*/
 
-h1{
+.logo h1{
     font-size: 3vmin;
     margin-top: 0px;
     margin-bottom: 1vmin;
+    color: #E8DED2;
 }
 
 .logo{
