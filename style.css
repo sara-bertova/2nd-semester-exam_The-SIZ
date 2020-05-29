@@ -193,17 +193,6 @@ input {
     transition: all 0.5s;
 }
 
-p.artist_name {
-    color: var(--light-blue);
-    font-weight: bold;
-    opacity: 30%;
-    margin: 0;
-    font-size: 150px;
-    letter-spacing: 5px;
-    margin-top: 25px;
-    /*color: #90B2C4;*/
-}
-
 #menu_toggle:checked ~ .menu_effects {
     opacity: 1;
     visibility: visible;
@@ -966,11 +955,6 @@ footer ul.ig {
     .photoshoot_title {
         margin-left: -70px;
     }
-
-    p.artist_name {
-        font-size: 90px;
-        letter-spacing: 10px;
-    }
 }
 
 
@@ -1119,11 +1103,6 @@ footer ul.ig {
 
 
 @media only screen and (max-width: 600px) {
-
-    p.artist_name {
-        font-size: 40px;
-        text-align: left;
-    }
 
     .gallery_container {
         column-count: 1;
