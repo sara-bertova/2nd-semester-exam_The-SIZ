@@ -50,6 +50,23 @@ body {
     background-position: center;
 }
 
+/*LOGO*/
+
+h1{
+    font-size: 3vmin;
+    margin-top: 0px;
+    margin-bottom: 1vmin;
+}
+
+.logo{
+    white-space: nowrap;
+  overflow: hidden;
+    text-overflow: clip;
+}
+
+.logo_blue{
+    color: #7FA2B3;
+}
 
 /*MENU*/
 
