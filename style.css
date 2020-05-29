@@ -59,7 +59,7 @@ input {
 
 .open {
     background-color: var(--dark-blue);
-    width: 24px;
+    width: 40px;
     height: 4px;
     display: block;
     border-radius: 2px;
@@ -72,7 +72,7 @@ input {
 .open:before {
     content: "";
     background-color: var(--dark-blue);
-    width: 24px;
+    width: 40px;
     height: 4px;
     display: block;
     border-radius: 2px;
@@ -85,7 +85,7 @@ input {
 .open:after {
     content: "";
     background-color: var(--dark-blue);
-    width: 24px;
+    width: 40px;
     height: 4px;
     display: block;
     border-radius: 2px;
@@ -96,7 +96,7 @@ input {
 }
 
 .menu_open {
-    width: 24px;
+    width: 40px;
     height: 20px;
     display: block;
     padding: 15px;
@@ -414,26 +414,26 @@ path.cls-3 {
 
 .homepage_quote1 {
     animation: quoteFading1 6s infinite;
-    animation:
-        margin-top: 50px;
+    animation-delay: 5s;
+    opacity: 0;
+    margin-top: 50px;
     font-size: 50px;
 }
 
 .homepage_quote2 {
     animation: quoteFading2 6s infinite;
-    animation-delay: 6s;
+    animation-delay: 3s;
     opacity: 0;
     margin-top: -50px;
     font-size: 30px;
 }
 
-/*.homepage_quote3{
-    animation: quoteFading2 5s infinite;
-    animation-delay: 12s;
+.homepage_quote3{
+    animation: quoteFading3 6s infinite;
     opacity: 0;
     margin-top: -35px;
     font-size: 30px;
-}*/
+}
 
 .homepage_quote1,
 .homepage_quote2,
@@ -445,15 +445,15 @@ path.cls-3 {
 
 @keyframes quoteFading1 {
     0% {
-        opacity: 1;
-    }
-
-    50% {
         opacity: 0;
     }
 
-    100% {
+    20% {
         opacity: 1;
+    }
+
+    40% {
+        opacity: 0;
     }
 }
 
@@ -463,11 +463,24 @@ path.cls-3 {
         opacity: 0;
     }
 
-    50% {
+    40% {
         opacity: 1;
     }
 
-    100% {
+    60% {
+        opacity: 0;
+    }
+}
+
+@keyframes quoteFading3 {
+    0% {
+        opacity: 0;
+    }
+
+    60% {
+        opacity: 1;
+    }
+    80%{
         opacity: 0;
     }
 }

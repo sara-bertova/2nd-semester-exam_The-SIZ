@@ -56,7 +56,7 @@ function showPhoto(onePhoto) {
             var quote3 = document.createElement("p");
 
             quote1.textContent = "Dreamy";
-            quote2.textContent = "Myterious";
+            quote2.textContent = "Mysterious";
             quote3.textContent = "Surrealistic";
 
             quote1.classList.add("homepage_quote1");
