@@ -39,10 +39,8 @@ body {
 .homepage_container,
 .photoshoot,
 .about {
-
     background-image: url(shapes/shapes-all-01.svg);
     background-repeat: repeat;
-
 }
 
 .contact_body {
@@ -54,9 +52,6 @@ body {
 
 
 /*MENU*/
-nav {
-    z-index: 100;
-}
 
 input {
     display: none;
@@ -238,7 +233,7 @@ p.artist_name {
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 1;
+    z-index: 101;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -629,37 +624,6 @@ p.gal_name {
 .description {
     padding: 20px;
 }
-
-.sub-pic-gallery {
-    column-count: 2;
-    column-gap: 0px;
-    line-height: 0;
-    margin: 0 50px;
-}
-
-.sub-pic-gallery img {
-    padding-bottom: 50px;
-}
-
-sub-pic-gallery img {
-    position: relative;
-}
-
-.gallery img {
-    width: 100%;
-    height: auto;
-}
-
-.sub-gallery img {
-    width: 50%;
-    height: auto;
-    cursor: pointer;
-}
-
-.sub-gallery img:hover {
-    opacity: 50%;
-}
-
 
 /*MODALS*/
 .hide {
