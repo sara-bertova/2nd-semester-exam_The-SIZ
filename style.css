@@ -39,10 +39,8 @@ body {
 .homepage_container,
 .photoshoot,
 .about {
-
     background-image: url(shapes/shapes-all-01.svg);
     background-repeat: repeat;
-
 }
 
 .contact_body {
@@ -54,9 +52,6 @@ body {
 
 
 /*MENU*/
-nav {
-    z-index: 100;
-}
 
 input {
     display: none;
@@ -64,7 +59,7 @@ input {
 
 .open {
     background-color: var(--dark-blue);
-    width: 24px;
+    width: 40px;
     height: 4px;
     display: block;
     border-radius: 2px;
@@ -77,7 +72,7 @@ input {
 .open:before {
     content: "";
     background-color: var(--dark-blue);
-    width: 24px;
+    width: 40px;
     height: 4px;
     display: block;
     border-radius: 2px;
@@ -90,7 +85,7 @@ input {
 .open:after {
     content: "";
     background-color: var(--dark-blue);
-    width: 24px;
+    width: 40px;
     height: 4px;
     display: block;
     border-radius: 2px;
@@ -101,7 +96,7 @@ input {
 }
 
 .menu_open {
-    width: 24px;
+    width: 40px;
     height: 20px;
     display: block;
     padding: 15px;
@@ -238,7 +233,7 @@ p.artist_name {
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 1;
+    z-index: 101;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -419,26 +414,26 @@ path.cls-3 {
 
 .homepage_quote1 {
     animation: quoteFading1 6s infinite;
-    animation:
-        margin-top: 50px;
+    animation-delay: 5s;
+    opacity: 0;
+    margin-top: 50px;
     font-size: 50px;
 }
 
 .homepage_quote2 {
     animation: quoteFading2 6s infinite;
-    animation-delay: 6s;
+    animation-delay: 3s;
     opacity: 0;
     margin-top: -50px;
     font-size: 30px;
 }
 
-/*.homepage_quote3{
-    animation: quoteFading2 5s infinite;
-    animation-delay: 12s;
+.homepage_quote3{
+    animation: quoteFading3 6s infinite;
     opacity: 0;
     margin-top: -35px;
     font-size: 30px;
-}*/
+}
 
 .homepage_quote1,
 .homepage_quote2,
@@ -450,15 +445,15 @@ path.cls-3 {
 
 @keyframes quoteFading1 {
     0% {
-        opacity: 1;
-    }
-
-    50% {
         opacity: 0;
     }
 
-    100% {
+    20% {
         opacity: 1;
+    }
+
+    40% {
+        opacity: 0;
     }
 }
 
@@ -468,11 +463,24 @@ path.cls-3 {
         opacity: 0;
     }
 
-    50% {
+    40% {
         opacity: 1;
     }
 
-    100% {
+    60% {
+        opacity: 0;
+    }
+}
+
+@keyframes quoteFading3 {
+    0% {
+        opacity: 0;
+    }
+
+    60% {
+        opacity: 1;
+    }
+    80%{
         opacity: 0;
     }
 }
@@ -629,37 +637,6 @@ p.gal_name {
 .description {
     padding: 20px;
 }
-
-.sub-pic-gallery {
-    column-count: 2;
-    column-gap: 0px;
-    line-height: 0;
-    margin: 0 50px;
-}
-
-.sub-pic-gallery img {
-    padding-bottom: 50px;
-}
-
-sub-pic-gallery img {
-    position: relative;
-}
-
-.gallery img {
-    width: 100%;
-    height: auto;
-}
-
-.sub-gallery img {
-    width: 50%;
-    height: auto;
-    cursor: pointer;
-}
-
-.sub-gallery img:hover {
-    opacity: 50%;
-}
-
 
 /*MODALS*/
 .hide {
