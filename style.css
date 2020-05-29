@@ -365,14 +365,14 @@ path.cls-3 {
     margin-top: 50px;
 }
 
-.homepage_name{
+.homepage_name {
     width: 250px;
     font-size: 50px;
     margin-top: 50px;
     margin-bottom: 0;
 }
 
-.homepage_surname{
+.homepage_surname {
     width: 250px;
     font-size: 50px;
     margin-bottom: 0;
@@ -417,14 +417,14 @@ path.cls-3 {
     margin-top: 50px;
 }
 
-.homepage_quote1{
+.homepage_quote1 {
     animation: quoteFading1 6s infinite;
     animation:
-    margin-top: 50px;
+        margin-top: 50px;
     font-size: 50px;
 }
 
-.homepage_quote2{
+.homepage_quote2 {
     animation: quoteFading2 6s infinite;
     animation-delay: 6s;
     opacity: 0;
@@ -440,7 +440,9 @@ path.cls-3 {
     font-size: 30px;
 }*/
 
-.homepage_quote1, .homepage_quote2, .homepage_quote3 {
+.homepage_quote1,
+.homepage_quote2,
+.homepage_quote3 {
     text-align: center;
     width: 200px;
     margin-bottom: 0;
@@ -688,7 +690,7 @@ sub-pic-gallery img {
 .modal_image {
     max-width: 33%;
     display: block;
-    margin: 4% auto;
+    margin: 60px auto;
 }
 
 .resume_modal_content {
@@ -976,6 +978,7 @@ footer ul.ig {
     }
 }
 
+
 @media only screen and (max-width: 800px) {
 
     #loader_wrapper {
@@ -1001,7 +1004,7 @@ footer ul.ig {
         grid-template-rows: auto;
     }
 
-    .paragraph1{
+    .paragraph1 {
         margin-top: 0;
     }
 
@@ -1114,8 +1117,8 @@ footer ul.ig {
     .contact1 {
         margin-top: 15vmin;
     }
-
 }
+
 
 @media only screen and (max-width: 600px) {
 
@@ -1161,5 +1164,9 @@ footer ul.ig {
         left: 1%;
         width: 80px;
         height: 80px;
+    }
+
+    img.modal_image {
+        max-width: 90%;
     }
 }
