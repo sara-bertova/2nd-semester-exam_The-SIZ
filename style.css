@@ -950,9 +950,13 @@ footer ul.ig {
     }
 
     .about_text {
-        margin-top: 50px;
+        margin-top: 8vmin;
         grid-column: 2;
         grid-row: 2 / 4;
+    }
+
+    .about_heading{
+        text-align: center;
     }
 
     p.gal_name {
@@ -996,7 +1000,8 @@ footer ul.ig {
     }
 
     .paragraph1 {
-        margin-top: 0;
+        margin-top: 8vmin;
+        grid-row: 3;
     }
 
     video {
@@ -1007,11 +1012,13 @@ footer ul.ig {
         grid-row: 4;
         margin-left: auto;
         margin-right: auto;
+        margin-top: 8vmin;
     }
 
     .about_img1 {
+        margin-top: 5vmin;
         grid-column: 1;
-        grid-row: 3;
+        grid-row: 2;
     }
 
     .about_img2 {
