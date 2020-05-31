@@ -735,19 +735,14 @@ p.gal_name {
     grid-column: 2;
 }
 
-.education_info, .work_info{
-    display: grid;
-    grid-template-columns: 200px auto;
-    column-gap: 10px;
-}
-.education_when, .experiences_when {
+.resume_when {
     font-weight: bold;
-    grid-column: 1;
-    justify-self: center;
-    align-self: center;
+    margin-bottom: 5px;
+
 }
-.education_what, .experiences_what{
-    grid-column: 2;
+.resume_what{
+    margin-top: 0;
+
 }
 
 /*ABOUT*/

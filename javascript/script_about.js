@@ -17,6 +17,19 @@ function handleAboutData(jsonData) {
     jsonData.forEach(showAboutInfo);
 }
 
+// Fetching data for resume
+fetch("http://www.rasbery.eu/2nd-semester-exam/wp-json/wp/v2/resume")
+    .then(function (response) {
+        return response.json()
+    })
+    .then(function (data) {
+        handleResumeData(data)
+    })
+
+function handleResumeData(jsonData) {
+    jsonData.forEach(showResumeInfo);
+}
+
 function showAboutInfo(info) {
 
     document.querySelector(".about_heading").textContent = info.artist_name;
@@ -27,11 +40,26 @@ function showAboutInfo(info) {
 
     document.querySelector(".about_img1").src = info.img1.guid;
     document.querySelector(".about_img2").src = info.img2.guid;
+}
+
+function showResumeInfo(info) {
+
+    var when = document.createElement("p");
+    var what = document.createElement("p");
+
+    when.classList.add("resume_when");
+    what.classList.add("resume_what");
+
+    when.textContent = info.when;
+    what.textContent = info.what;
 
     // Gets modal from the document, opens it and adds data from database
     document.querySelector(".resume_heading").addEventListener("click", () => {
-        /*document.querySelector(".education_info").textContent = info.education;
-        document.querySelector(".experiences_info").textContent = info.education;*/
+        if (info.title.rendered == "Work") {
+            document.querySelector(".work_info").append(when, what);
+        } else {
+            document.querySelector(".education_info").append(when, what);
+        }
         modal.classList.remove("hide");
     });
 }
