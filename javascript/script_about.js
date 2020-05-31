@@ -1,6 +1,7 @@
 // On click adds class "hide" to the "resume_modal_bg" class to close the modal
 const modal = document.querySelector(".resume_modal_bg");
-modal.addEventListener("click", () => {
+const modalCloseBtn = document.querySelector(".resume_close");
+modalCloseBtn.addEventListener("click", () => {
     modal.classList.add("hide");
 });
 
@@ -52,6 +53,17 @@ function showResumeInfo(info) {
 
     when.textContent = info.when;
     what.textContent = info.what;
+
+    if (info.link){
+        var showLink = document.createElement("a");
+
+        showLink.href = info.link;
+        showLink.setAttribute('target', '_blank');
+        showLink.classList.add("resume_link");
+        showLink.textContent = "(SHOW)";
+
+        what.append(" ", showLink);
+    }
 
     // Gets modal from the document, opens it and adds data from database
     document.querySelector(".resume_heading").addEventListener("click", () => {
