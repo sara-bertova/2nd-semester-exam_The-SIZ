@@ -30,8 +30,8 @@ function showAboutInfo(info) {
 
     // Gets modal from the document, opens it and adds data from database
     document.querySelector(".resume_heading").addEventListener("click", () => {
-        document.querySelector(".education_info").textContent = info.education;
-        document.querySelector(".experiences_info").textContent = info.education;
+        /*document.querySelector(".education_info").textContent = info.education;
+        document.querySelector(".experiences_info").textContent = info.education;*/
         modal.classList.remove("hide");
     });
 }
