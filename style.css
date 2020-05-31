@@ -674,10 +674,7 @@ p.gal_name {
     padding: 30px;
     width: 70%;
 
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
 
@@ -688,6 +685,7 @@ p.gal_name {
 
 .education_heading,
 .work_heading {
+    grid-row: 1;
     text-transform: uppercase;
     letter-spacing: 3px;
 }
@@ -700,17 +698,18 @@ p.gal_name {
 
 .education_info {
     grid-column: 1;
+    grid-row: 2;
 }
 
 .work_heading {
     grid-column: 2;
-    grid-row: 1;
     margin: 0;
     align-self: flex-end;
 }
 
 .work_info {
     grid-column: 2;
+    grid-row: 2;
 }
 
 .resume_when {
@@ -730,32 +729,14 @@ p.gal_name {
     color: var(--red-color);
 }
 
-.resume_close {
+.resume_close{
+    font-weight: bold;
+    font-size: 40px;
     cursor: pointer;
-    position: absolute;
-    right: 32px;
-    top: 32px;
-    width: 40px;
-    height: 32px;
-    opacity: 0.3;
-    transition: .5s
-}
-.resume_close:hover {
-    opacity: 1;
-}
-.resume_close:before, .resume_close:after {
-    position: absolute;
-    left: 15px;
-    content: ' ';
-    height: 33px;
-    width: 2px;
-    background-color: #333;
-}
-.resume_close:before {
-    transform: rotate(45deg);
-}
-.resume_close:after {
-    transform: rotate(-45deg);
+
+    grid-column: 2;
+    grid-row: 1;
+    justify-self: end;
 }
 
 
@@ -1058,6 +1039,10 @@ footer ul.ig {
 
     .resume_modal_content {
         grid-template-columns: 1fr;
+    }
+
+    .resume_close{
+        grid-column: 1;
     }
 
     .education_heading {
