@@ -421,21 +421,18 @@ path.cls-3 {
 
 .homepage_quote1 {
     animation: quoteFading1 6s infinite;
-    opacity: 0;
     margin-top: 50px;
     font-size: 50px;
 }
 
 .homepage_quote2 {
     animation: quoteFading2 6s infinite;
-    opacity: 0;
     margin-top: -50px;
     font-size: 30px;
 }
 
 .homepage_quote3{
     animation: quoteFading3 6s infinite;
-    opacity: 0;
     margin-top: -35px;
     font-size: 30px;
 }
@@ -443,64 +440,41 @@ path.cls-3 {
 .homepage_quote1,
 .homepage_quote2,
 .homepage_quote3 {
+
     text-align: center;
     width: 200px;
     margin-bottom: 0;
 }
 
-@keyframes quoteFading1 {
-    0% {
-        opacity: 0.5;
+@keyframes quoteFading1{
+    0%, 22.2%{
+        opacity:  1;
     }
-
-    14% {
-        opacity: 1;
-    }
-
-    28% {
-        opacity: 1;
-    }
-    42%{
-        opacity: 0;
-    }
-    84%{
+    33.3%, 88.8%{
         opacity: 0;
     }
     100%{
-        opacity: 0.5;
+        opacity: 1;
     }
 }
 
-
-@keyframes quoteFading2 {
-    0% {
-        opacity: 0;
+@keyframes quoteFading2{
+    0%, 22.2%{
+        opacity:  0;
     }
-    28% {
-        opacity: 0;
-    }
-    42%{
+    33.3%, 55.5%{
         opacity: 1;
     }
-    56%{
-        opacity: 1;
-    }
-    70%{
+    66.6%, 100%{
         opacity: 0;
     }
 }
 
-@keyframes quoteFading3 {
-    0% {
-        opacity: 0;
+@keyframes quoteFading3{
+    0%, 55.5%{
+        opacity:  0;
     }
-    56%{
-        opacity: 0;
-    }
-    70%{
-        opacity: 1;
-    }
-    84%{
+    66.6%, 88.8%{
         opacity: 1;
     }
     100%{
