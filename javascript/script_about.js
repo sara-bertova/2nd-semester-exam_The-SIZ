@@ -18,7 +18,7 @@ function handleAboutData(jsonData) {
 }
 
 // Fetching data for resume
-fetch("http://www.rasbery.eu/2nd-semester-exam/wp-json/wp/v2/resume")
+fetch("http://www.rasbery.eu/2nd-semester-exam/wp-json/wp/v2/resume?per_page=50")
     .then(function (response) {
         return response.json()
     })
