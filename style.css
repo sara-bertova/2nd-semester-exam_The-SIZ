@@ -705,6 +705,7 @@ p.gal_name {
 .work_heading {
     text-transform: uppercase;
     letter-spacing: 3px;
+    color: var(--blue-color);
 }
 
 .education_heading {
