@@ -1,11 +1,4 @@
-/*//LOADER
-var overlay = document.getElementById("loader_wrapper");
-
-window.addEventListener("load", function () {
-    overlay.style.display = "none";
-})*/
-
-//GO TO TOP BTN
+// Go to top btn
 var topBtn = document.getElementById("top_Btn");
 //enable/disable scroll button based on scroller position
 function scrollFunction() {
@@ -23,7 +16,7 @@ window.onscroll = function () {
 topBtn.addEventListener("click", topFunction);
 
 // When the user clicks on the button, scroll to the top of the document
-function topFunction() { // eslint-disable-line no-unused-vars
+function topFunction() {
     document.body.scrollTop = 0; // For Safari
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }

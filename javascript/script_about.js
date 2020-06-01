@@ -31,6 +31,7 @@ function handleResumeData(jsonData) {
     jsonData.forEach(showResumeInfo);
 }
 
+// Function for creating about page content, data are retrieved from the database
 function showAboutInfo(info) {
 
     document.querySelector(".about_heading").textContent = info.artist_name;
@@ -43,6 +44,7 @@ function showAboutInfo(info) {
     document.querySelector(".about_img2").src = info.img2.guid;
 }
 
+// Function for creating resume content, data are retrieved from the database
 function showResumeInfo(info) {
 
     var when = document.createElement("p");
