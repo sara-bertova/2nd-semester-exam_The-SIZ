@@ -56,7 +56,7 @@ function showResumeInfo(info) {
     when.textContent = info.when;
     what.textContent = info.what;
 
-    if (info.link){
+    if (info.link) {
         var showLink = document.createElement("a");
 
         showLink.href = info.link;
@@ -69,7 +69,7 @@ function showResumeInfo(info) {
 
     // Gets modal from the document, opens it and adds data from database
     document.querySelector(".resume_heading").addEventListener("click", () => {
-        if (info.title.rendered == "Work") {
+        if (info.title.rendered == "Experience") {
             document.querySelector(".work_info").append(when, what);
         } else {
             document.querySelector(".education_info").append(when, what);
