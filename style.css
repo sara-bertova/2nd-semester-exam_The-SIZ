@@ -950,12 +950,15 @@ ul.con_icons li {
 }
 
 footer li.fb,
-footer li.ig,
-footer li.in {
+footer li.in,
+footer li.ig {
     width: 70px;
     height: 70px;
 }
 
+footer li:hover {
+    transform: translate(2px, 2px);
+}
 
 /*RESPONSIVE*/
 @media only screen and (max-width: 1350px) {
@@ -1088,6 +1091,7 @@ footer li.in {
         grid-row: 4;
         margin: 0;
         align-self: flex-end;
+        margin-top: 15px;
     }
 
     .work_info {
