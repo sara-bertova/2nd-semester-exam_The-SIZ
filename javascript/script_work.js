@@ -1,4 +1,4 @@
-// SUBMENU
+// Fetching data for submenu
 fetch("http://www.rasbery.eu/2nd-semester-exam/wp-json/wp/v2/categories?parent=5&order=desc")
     .then(function (response) {
         return response.json()
@@ -13,10 +13,11 @@ function handleSubmenuData(jsonData) {
     jsonData.forEach(showSubmenu);
 }
 
-
+// Gets category id via urlParams.get
 const urlParams = new URLSearchParams(window.location.search);
 const categoryId = urlParams.get("category_id");
 
+// Function for creating submenu items
 function showSubmenu(oneCategory) {
     const ul = document.querySelector("#submenu")
     const li = document.createElement("li");
@@ -30,6 +31,7 @@ function showSubmenu(oneCategory) {
         a.classList.add("menu_other");
     }
 
+    // Creating a link for category in submenu based on the category id
     a.textContent = oneCategory.name;
     a.href = "work.html?category_id=" + oneCategory.id;
     li.appendChild(a);
@@ -57,17 +59,17 @@ if (categoryId) {
         })
 }
 
-
 function handleGalleryData(jsonData) {
     jsonData.reverse();
     jsonData.forEach(showGallery);
 }
 
-
+// Function for creatin gallery of photoshoots using data retrieved from databes
 function showGallery(oneShoot) {
     const template = document.querySelector("#gallery_templ").content;
     const clone = template.cloneNode(true);
 
+    // Creating a link to single photoshoot page according to the photoshoot id
     const galleryLink = clone.querySelector(".gallery_link");
     if (galleryLink) {
         galleryLink.href += oneShoot.id;

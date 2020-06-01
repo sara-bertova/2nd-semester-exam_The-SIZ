@@ -1,6 +1,8 @@
+// Gets photoshoot id via urlParams.get
 const urlParams = new URLSearchParams(window.location.search);
 const photoshootID = urlParams.get("photoshoot_id");
 
+// Fetching data for one photoshoot using photoshootId
 if (photoshootID) {
     fetch("http://www.rasbery.eu/2nd-semester-exam/wp-json/wp/v2/photoshoot/" + photoshootID + "?_embed")
         .then(function (response) {
@@ -11,6 +13,7 @@ if (photoshootID) {
         })
 }
 
+// Function for creating single photoshoot page using data retrieved from databes
 function showSinglePhotoshoot(photoshootData) {
 
     for (i = 0; i < photoshootData.photoshoot_images.length; i++) {
@@ -39,9 +42,7 @@ function showSinglePhotoshoot(photoshootData) {
             description.innerHTML = photoshootData.excerpt.rendered;
             description.classList.add("description");
             document.querySelector(".single_photoshoot_left").append(description);
-
         }
-
     }
 
     // Finally the title is placed to the middle column

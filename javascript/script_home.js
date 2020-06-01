@@ -17,6 +17,7 @@ function handleHomepageData(jsonData) {
     jsonData.forEach(showPhoto);
 }
 
+// Function for creating homepage photos gallery, photos are retrived from database
 function showPhoto(onePhoto) {
 
     // Creates element "img" in the document"
