@@ -588,7 +588,7 @@ ul#submenu a.menu_other:hover {
     color: var(--dark-blue);
 }
 
-p.gal_name {
+.gal_name {
     margin: 0;
     padding-top: 8px;
     padding-left: 8px;
@@ -1010,7 +1010,7 @@ footer li:hover {
         text-align: center;
     }
 
-    p.gal_name {
+    .gal_name {
         font-size: 3vmin;
     }
 
@@ -1118,7 +1118,7 @@ footer li:hover {
         margin: 0 10vmin;
     }
 
-    p.gal_name {
+    .gal_name {
         font-size: 3vmin;
     }
 
@@ -1196,7 +1196,7 @@ footer li:hover {
         column-count: 1;
     }
 
-    p.gal_name {
+    .gal_name {
         font-size: 6vmin;
     }
 

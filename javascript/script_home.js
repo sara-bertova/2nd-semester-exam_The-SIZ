@@ -20,8 +20,9 @@ function handleHomepageData(jsonData) {
 // Function for creating homepage photos gallery, photos are retrived from database
 function showPhoto(onePhoto) {
 
-    // Creates element "img" in the document"
+    // Creates element "img" in the document and sets its alt attribute"
     const homepageImg = document.createElement("img");
+    homepageImg.setAttribute("alt", "Mikkel Schwitzer's photo");
 
     homepageImg.src = onePhoto.photo.guid;
 
