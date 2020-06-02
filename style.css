@@ -199,20 +199,24 @@ input {
     transition: all 0.5s;
 }
 
+/* Show hidden content when the checkbox is checked */
 #menu_toggle:checked ~ .menu_effects {
     opacity: 1;
     visibility: visible;
     transition: opacity 0.5s;
 }
 
+/* Show hidden content when the checkbox is checked */
 #menu_toggle:checked ~ .menu_effects ul {
     opacity: 1;
 }
 
+/* Menu button styled (hides straight line) when the checkbox is checked */
 #menu_toggle:checked ~ .menu_open .open {
     background-color: transparent;
 }
 
+/* Menu button styled (creates X) when the checkbox is checked */
 #menu_toggle:checked ~ .menu_open .open:before {
     content: "";
     background-color: var(--sand-color);
@@ -223,6 +227,7 @@ input {
     z-index: 1;
 }
 
+/* Menu button styled (creates X) when the checkbox is checked */
 #menu_toggle:checked ~ .menu_open .open:after {
     content: "";
     background-color: var(--sand-color);
@@ -233,6 +238,7 @@ input {
     z-index: 1;
 }
 
+/* Moving effect on menu items when the checkbox is unchecked */
 #menu_toggle:not(:checked) ~ .menu_effects ul {
     transform: translateY(-30%);
 }
