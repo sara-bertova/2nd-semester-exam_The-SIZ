@@ -67,6 +67,12 @@ body {
 
 .logo_blue {
     color: #7FA2B3;
+    text-decoration: none;
+    transition: .5s;
+}
+
+.logo_blue:hover{
+    color: var(--sand-color);
 }
 
 /*MENU*/
@@ -193,20 +199,24 @@ input {
     transition: all 0.5s;
 }
 
+/* Show hidden content when the checkbox is checked */
 #menu_toggle:checked ~ .menu_effects {
     opacity: 1;
     visibility: visible;
     transition: opacity 0.5s;
 }
 
+/* Show hidden content when the checkbox is checked */
 #menu_toggle:checked ~ .menu_effects ul {
     opacity: 1;
 }
 
+/* Menu button styled (hides straight line) when the checkbox is checked */
 #menu_toggle:checked ~ .menu_open .open {
     background-color: transparent;
 }
 
+/* Menu button styled (creates X) when the checkbox is checked */
 #menu_toggle:checked ~ .menu_open .open:before {
     content: "";
     background-color: var(--sand-color);
@@ -217,6 +227,7 @@ input {
     z-index: 1;
 }
 
+/* Menu button styled (creates X) when the checkbox is checked */
 #menu_toggle:checked ~ .menu_open .open:after {
     content: "";
     background-color: var(--sand-color);
@@ -227,6 +238,7 @@ input {
     z-index: 1;
 }
 
+/* Moving effect on menu items when the checkbox is unchecked */
 #menu_toggle:not(:checked) ~ .menu_effects ul {
     transform: translateY(-30%);
 }
@@ -367,16 +379,19 @@ path.cls-3 {
     margin-top: 50px;
 }
 
-.homepage_name {
+.homepage_name, .homepage_surname{
     width: 250px;
     font-size: 50px;
+    color: var(--dark-blue);
+    text-decoration: none;
+}
+
+.homepage_name {
     margin-top: 50px;
     margin-bottom: 0;
 }
 
 .homepage_surname {
-    width: 250px;
-    font-size: 50px;
     margin-bottom: 0;
     margin-top: 0;
 }
@@ -440,11 +455,11 @@ path.cls-3 {
 .homepage_quote1,
 .homepage_quote2,
 .homepage_quote3 {
-
     text-align: center;
     width: 200px;
     margin-bottom: 0;
 }
+
 
 @keyframes quoteFading1 {
 
@@ -577,7 +592,7 @@ ul#submenu a.menu_other:hover {
     color: var(--dark-blue);
 }
 
-p.gal_name {
+.gal_name {
     margin: 0;
     padding-top: 8px;
     padding-left: 8px;
@@ -879,24 +894,22 @@ ul.con_icons {
     margin: 0;
 }
 
+.contact_img1, .contact_img2{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .contact_img1 {
     grid-column: 1;
     grid-row: 1 / 5;
     height: 32vmax;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    opacity: .7;
 }
 
 .contact_img2 {
     grid-column: 3;
     grid-row: 2 / 6;
     height: 32vmax;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    opacity: .7;
 }
 
 
@@ -999,7 +1012,7 @@ footer li:hover {
         text-align: center;
     }
 
-    p.gal_name {
+    .gal_name {
         font-size: 3vmin;
     }
 
@@ -1107,7 +1120,7 @@ footer li:hover {
         margin: 0 10vmin;
     }
 
-    p.gal_name {
+    .gal_name {
         font-size: 3vmin;
     }
 
@@ -1185,7 +1198,7 @@ footer li:hover {
         column-count: 1;
     }
 
-    p.gal_name {
+    .gal_name {
         font-size: 6vmin;
     }
 

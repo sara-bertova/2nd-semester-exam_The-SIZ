@@ -18,6 +18,7 @@ function showSinglePhotoshoot(photoshootData) {
 
     for (i = 0; i < photoshootData.photoshoot_images.length; i++) {
         const img = document.createElement("img");
+        img.setAttribute("alt", "Mikkel Schwitzer's photoshoot image");
         img.src = photoshootData.photoshoot_images[i].guid;
 
         // Images sorted to 2 columns acording to its position in list:
@@ -35,7 +36,6 @@ function showSinglePhotoshoot(photoshootData) {
             modal.classList.remove("hide");
             document.querySelector(".modal_image").src = e.currentTarget.attributes.big_image_path.value;
         });
-
 
         if (i == 0) {
             const description = document.createElement("p");
