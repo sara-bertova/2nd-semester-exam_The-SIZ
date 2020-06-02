@@ -32,8 +32,8 @@ function showPhoto(onePhoto) {
         // Special handeling for image with index 5
         // befor image, the quote is added
         if (onePhoto.number == 5) {
-            var name = document.createElement("p");
-            var surname = document.createElement("p");
+            var name = document.createElement("h2");
+            var surname = document.createElement("h2");
 
             name.textContent = "Mikkel";
             surname.textContent = "Schwitzer";
@@ -52,9 +52,9 @@ function showPhoto(onePhoto) {
         // Special handeling for image with index 16
         // befor image, the quote is added
         if (onePhoto.number == 16) {
-            var quote1 = document.createElement("p");
-            var quote2 = document.createElement("p");
-            var quote3 = document.createElement("p");
+            var quote1 = document.createElement("h2");
+            var quote2 = document.createElement("h2");
+            var quote3 = document.createElement("h2");
 
             quote1.textContent = "Dreamy";
             quote2.textContent = "Mysterious";

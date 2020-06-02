@@ -67,6 +67,12 @@ body {
 
 .logo_blue {
     color: #7FA2B3;
+    text-decoration: none;
+    transition: .5s;
+}
+
+.logo_blue:hover{
+    color: var(--sand-color);
 }
 
 /*MENU*/
@@ -367,16 +373,19 @@ path.cls-3 {
     margin-top: 50px;
 }
 
-.homepage_name {
+.homepage_name, .homepage_surname{
     width: 250px;
     font-size: 50px;
+    color: var(--dark-blue);
+    text-decoration: none;
+}
+
+.homepage_name {
     margin-top: 50px;
     margin-bottom: 0;
 }
 
 .homepage_surname {
-    width: 250px;
-    font-size: 50px;
     margin-bottom: 0;
     margin-top: 0;
 }
@@ -440,11 +449,13 @@ path.cls-3 {
 .homepage_quote1,
 .homepage_quote2,
 .homepage_quote3 {
-
+    color: var(--red-color);
+    text-decoration: none;
     text-align: center;
     width: 200px;
     margin-bottom: 0;
 }
+
 
 @keyframes quoteFading1 {
 
