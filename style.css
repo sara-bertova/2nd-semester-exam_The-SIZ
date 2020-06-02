@@ -389,11 +389,13 @@ path.cls-3 {
 .homepage_name {
     margin-top: 50px;
     margin-bottom: 0;
+    font-weight: 600;
 }
 
 .homepage_surname {
     margin-bottom: 0;
     margin-top: 0;
+    font-weight: 600;
 }
 
 .homepage_3column {
@@ -458,6 +460,7 @@ path.cls-3 {
     text-align: center;
     width: 200px;
     margin-bottom: 0;
+    font-weight: normal;
 }
 
 
@@ -598,6 +601,7 @@ ul#submenu a.menu_other:hover {
     padding-left: 8px;
     writing-mode: vertical-rl;
     font-size: 30px;
+    font-weight: normal;
 }
 
 .gallery img {
