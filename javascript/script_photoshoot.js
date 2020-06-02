@@ -1,10 +1,10 @@
 // Gets photoshoot id via urlParams.get
 const urlParams = new URLSearchParams(window.location.search);
-const photoshootID = urlParams.get("photoshoot_id");
+const photoshootId = urlParams.get("photoshoot_id");
 
 // Fetching data for one photoshoot using photoshootId
-if (photoshootID) {
-    fetch("http://www.rasbery.eu/2nd-semester-exam/wp-json/wp/v2/photoshoot/" + photoshootID + "?_embed")
+if (photoshootId) {
+    fetch("http://www.rasbery.eu/2nd-semester-exam/wp-json/wp/v2/photoshoot/" + photoshootId + "?_embed")
         .then(function (response) {
             return response.json()
         })
