@@ -4,7 +4,7 @@ setTimeout(function(){
          }, 2300);
 
 // Fetching data for homepage photos
-fetch("http://www.rasbery.eu/2nd-semester-exam/wp-json/wp/v2/homepage_photo?per_page=19")
+fetch("https://www.rasbery.eu/2nd-semester-exam/wp-json/wp/v2/homepage_photo?per_page=19")
     .then(function (response) {
         return response.json()
     })
