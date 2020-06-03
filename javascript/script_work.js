@@ -13,30 +13,32 @@ function handleSubmenuData(jsonData) {
     jsonData.forEach(showSubmenu);
 }
 
+
 // Gets category id via urlParams.get
 const urlParams = new URLSearchParams(window.location.search);
 const categoryId = urlParams.get("category_id");
 
 // Function for creating submenu items
 function showSubmenu(oneCategory) {
-    const ul = document.querySelector("#submenu")
+    const submenu = document.querySelector("#submenu");
     const li = document.createElement("li");
-    const a = document.createElement("a");
+    const submenuLink = document.createElement("a");
 
     // Based on category id, the submenu item is selected
     // or not. The category id is retrieved from page URL
     if (categoryId == oneCategory.id) {
-        a.classList.add("menu_selected");
+        submenuLink.classList.add("menu_selected");
     } else {
-        a.classList.add("menu_other");
+        submenuLink.classList.add("menu_other");
     }
 
     // Creating a link for category in submenu based on the category id
-    a.textContent = oneCategory.name;
-    a.href = "work.html?category_id=" + oneCategory.id;
-    li.appendChild(a);
-    ul.appendChild(li);
+    submenuLink.textContent = oneCategory.name;
+    submenuLink.href = "work.html?category_id=" + oneCategory.id;
+    li.appendChild(submenuLink);
+    submenu.appendChild(li);
 }
+
 
 // If categoryId is defined, the page for given category is presented
 // (images are fetched according to the categoryId), otherwise
@@ -59,10 +61,12 @@ if (categoryId) {
         })
 }
 
+
 function handleGalleryData(jsonData) {
     jsonData.reverse();
     jsonData.forEach(showGallery);
 }
+
 
 // Function for creatin gallery of photoshoots using data retrieved from databes
 function showGallery(oneShoot) {
