@@ -1,7 +1,7 @@
 // Adds style.display = "none" to the loader after 2.3 seconds to remove it
-setTimeout(function(){
-            document.getElementById("loader_wrapper").style.display = "none";
-         }, 2300);
+setTimeout(function () {
+    document.getElementById("loader_wrapper").style.display = "none";
+}, 2300);
 
 // Fetching data for homepage photos
 fetch("https://www.rasbery.eu/2nd-semester-exam/wp-json/wp/v2/homepage_photo?per_page=19")
