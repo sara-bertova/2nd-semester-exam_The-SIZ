@@ -70,7 +70,7 @@ body {
     transition: .5s;
 }
 
-.logo_blue:hover{
+.logo_blue:hover {
     color: var(--sand-color);
 }
 
@@ -378,7 +378,8 @@ path.cls-3 {
     margin-top: 50px;
 }
 
-.homepage_name, .homepage_surname{
+.homepage_name,
+.homepage_surname {
     width: 250px;
     font-size: 50px;
     color: var(--dark-blue);
@@ -897,7 +898,8 @@ ul.con_icons {
     margin: 0;
 }
 
-.contact_img1, .contact_img2{
+.contact_img1,
+.contact_img2 {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -982,7 +984,7 @@ footer li:hover {
 @media only screen and (max-width: 1350px) {
 
     .homepage_name,
-    .homepage_surname{
+    .homepage_surname {
         font-size: 30px;
         text-align: center;
     }
@@ -1030,15 +1032,18 @@ footer li:hover {
         margin-left: -70px;
     }
 }
-@media only screen and (max-width: 1000px){
+
+@media only screen and (max-width: 1000px) {
+
     .homepage_quote1,
     .homepage_quote2,
     .homepage_quote3,
     .homepage_name,
-    .homepage_surname{
+    .homepage_surname {
         display: none;
     }
 }
+
 @media only screen and (max-width: 800px) {
 
     #loader_wrapper {
@@ -1202,6 +1207,7 @@ footer li:hover {
         display: none;
     }
 }
+
 @media only screen and (max-width: 600px) {
 
     .gallery_container {
