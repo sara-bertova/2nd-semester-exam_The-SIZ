@@ -980,6 +980,13 @@ footer li:hover {
 
 /*RESPONSIVE*/
 @media only screen and (max-width: 1350px) {
+
+    .homepage_name,
+    .homepage_surname{
+        font-size: 30px;
+        text-align: center;
+    }
+
     .about_main {
         grid-template-columns: 1fr 1fr;
         column-gap: 50px;
@@ -1023,8 +1030,15 @@ footer li:hover {
         margin-left: -70px;
     }
 }
-
-
+@media only screen and (max-width: 1000px){
+    .homepage_quote1,
+    .homepage_quote2,
+    .homepage_quote3,
+    .homepage_name,
+    .homepage_surname{
+        display: none;
+    }
+}
 @media only screen and (max-width: 800px) {
 
     #loader_wrapper {
@@ -1037,11 +1051,6 @@ footer li:hover {
     .loader {
         font-size: 40px;
 
-    }
-
-    .homepage_quote1,
-    .homepage_quote2 {
-        display: none;
     }
 
     .about_main {
@@ -1193,8 +1202,6 @@ footer li:hover {
         display: none;
     }
 }
-
-
 @media only screen and (max-width: 600px) {
 
     .gallery_container {
