@@ -1026,6 +1026,7 @@ footer li:hover {
 
     .gal_name {
         font-size: 3vmin;
+        padding: 0;
     }
 
     .photoshoot_title {
