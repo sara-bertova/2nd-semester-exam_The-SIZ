@@ -566,7 +566,6 @@ ul#submenu a.menu_other:hover {
     column-count: 3;
     column-gap: 50px;
     padding-top: 50px;
-    padding-bottom: 50px;
 }
 
 .pic_gallery {
@@ -979,6 +978,11 @@ footer li.ig {
 footer li:hover {
     transform: translate(2px, 2px);
 }
+
+footer {
+    padding-top: 50px;
+}
+
 
 /*RESPONSIVE*/
 @media only screen and (max-width: 1350px) {
