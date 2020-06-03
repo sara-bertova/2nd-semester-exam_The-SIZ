@@ -4,7 +4,7 @@ const photoshootId = urlParams.get("photoshoot_id");
 
 // Fetching data for one photoshoot using photoshootId
 if (photoshootId) {
-    fetch("http://www.rasbery.eu/2nd-semester-exam/wp-json/wp/v2/photoshoot/" + photoshootId + "?_embed")
+    fetch("https://www.rasbery.eu/2nd-semester-exam/wp-json/wp/v2/photoshoot/" + photoshootId + "?_embed")
         .then(function (response) {
             return response.json()
         })

@@ -1,5 +1,5 @@
 // Fetching data for submenu
-fetch("http://www.rasbery.eu/2nd-semester-exam/wp-json/wp/v2/categories?parent=5&order=desc")
+fetch("https://www.rasbery.eu/2nd-semester-exam/wp-json/wp/v2/categories?parent=5&order=desc")
     .then(function (response) {
         return response.json()
     })
@@ -42,7 +42,7 @@ function showSubmenu(oneCategory) {
 // (images are fetched according to the categoryId), otherwise
 // page presents all images
 if (categoryId) {
-    fetch("http://www.rasbery.eu/2nd-semester-exam/wp-json/wp/v2/photoshoot?categories=" + categoryId + "&per_page=50") // link which helps filter the photoshoots
+    fetch("https://www.rasbery.eu/2nd-semester-exam/wp-json/wp/v2/photoshoot?categories=" + categoryId + "&per_page=50") // link which helps filter the photoshoots
         .then(function (response) {
             return response.json()
         })
@@ -50,7 +50,7 @@ if (categoryId) {
             handleGalleryData(data)
         })
 } else {
-    fetch("http://www.rasbery.eu/2nd-semester-exam/wp-json/wp/v2/photoshoot?per_page=50")
+    fetch("https://www.rasbery.eu/2nd-semester-exam/wp-json/wp/v2/photoshoot?per_page=50")
         .then(function (response) {
             return response.json()
         })
