@@ -210,7 +210,7 @@ input {
     opacity: 1;
 }
 
-/* Menu button styled (hides straight line) when the checkbox is checked */
+/* Menu button styled (hides straight line in button) when the checkbox is checked */
 #menu_toggle:checked ~ .menu_open .open {
     background-color: transparent;
 }

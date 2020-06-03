@@ -13,6 +13,7 @@ if (photoshootId) {
         })
 }
 
+
 // Function for creating single photoshoot page using data retrieved from databes
 function showSinglePhotoshoot(photoshootData) {
 

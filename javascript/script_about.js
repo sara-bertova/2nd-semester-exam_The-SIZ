@@ -5,6 +5,7 @@ modalCloseBtn.addEventListener("click", () => {
     modal.classList.add("hide");
 });
 
+
 // Fetching data for about page
 fetch("https://www.rasbery.eu/2nd-semester-exam/wp-json/wp/v2/about_info")
     .then(function (response) {
@@ -18,6 +19,7 @@ function handleAboutData(jsonData) {
     jsonData.forEach(showAboutInfo);
 }
 
+
 // Fetching data for resume
 fetch("https://www.rasbery.eu/2nd-semester-exam/wp-json/wp/v2/resume?per_page=50")
     .then(function (response) {
@@ -27,9 +29,11 @@ fetch("https://www.rasbery.eu/2nd-semester-exam/wp-json/wp/v2/resume?per_page=50
         handleResumeData(data)
     })
 
+
 function handleResumeData(jsonData) {
     jsonData.forEach(showResumeInfo);
 }
+
 
 // Function for creating about page content, data are retrieved from the database
 function showAboutInfo(info) {
@@ -43,6 +47,7 @@ function showAboutInfo(info) {
     document.querySelector(".about_img1").src = info.img1.guid;
     document.querySelector(".about_img2").src = info.img2.guid;
 }
+
 
 // Function for creating resume content, data are retrieved from the database
 function showResumeInfo(info) {

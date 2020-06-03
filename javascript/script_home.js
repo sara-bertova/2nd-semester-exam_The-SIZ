@@ -3,6 +3,7 @@ setTimeout(function () {
     document.getElementById("loader_wrapper").style.display = "none";
 }, 2300);
 
+
 // Fetching data for homepage photos
 fetch("https://www.rasbery.eu/2nd-semester-exam/wp-json/wp/v2/homepage_photo?per_page=19")
     .then(function (response) {
@@ -12,10 +13,12 @@ fetch("https://www.rasbery.eu/2nd-semester-exam/wp-json/wp/v2/homepage_photo?per
         handleHomepageData(data)
     })
 
+
 function handleHomepageData(jsonData) {
     jsonData.reverse();
     jsonData.forEach(showPhoto);
 }
+
 
 // Function for creating homepage photos gallery, photos are retrived from database
 function showPhoto(onePhoto) {
