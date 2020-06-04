@@ -824,7 +824,6 @@ video {
     background-color: var(--blue-color);
     padding-left: 30px;
     margin-top: -200px;
-    z-index: -1;
 }
 
 .about_img1 {
